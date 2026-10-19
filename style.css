@@ -1216,7 +1216,7 @@ a.mainmenu img {
 .pa-icons-bottom img {
   max-height: 75px;
 }
-
+@media not all{
 /* ANIMATION ICONS TOP */
 
 .pa-icons-top {
@@ -1268,6 +1268,7 @@ a.mainmenu img {
 }
 
 /* FIN ANIMATION ICONS TOP */
+}
 
 /* TITRE */
 
