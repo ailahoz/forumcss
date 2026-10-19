@@ -1573,7 +1573,7 @@ label.pa-tab-label {
 
 /* FIN PAGE D'ACCUEIL ---*/
 
-/*** ------------------------------- ***/
+@media not all { /*** ------------------------------- ***/
 /*** CATEGORIES -------------------- ***/
 
 .category {
@@ -1681,6 +1681,7 @@ a.forumtitle {
   font-weight: 600;
   float: right;
   font-size: var(--little-size);
+}
 }
 
 /*** ------------------------------- ***/
