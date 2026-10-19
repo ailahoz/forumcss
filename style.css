@@ -1225,7 +1225,7 @@ a.mainmenu img {
   overflow: visible;
 }
 
-/* Image et bloc coloré */
+/* retour animation */
 .pa-icons-top > div > a {
   position: relative;
   display: block;
@@ -1237,37 +1237,37 @@ a.mainmenu img {
   opacity: 1;
 }
 
-/* couleur opaque, masquée au repos */
+/* background color non animé */
 .pa-icons-top > div > a::after {
   content: "";
   position: absolute;
   inset: 0;
   background: #d58b92;
-  clip-path: inset(0 0 100% 0);
+  opacity: 0;
   pointer-events: none;
-  transition: clip-path 0.7s ease;
+  transition: opacity 0.7s ease;
 }
 
-/* descente au survol */
+/* descente */
 .pa-icons-top > div:hover > a {
   transform: translateY(45px);
   transition: transform 0.18s ease-out;
 }
 
-/* la couleur recouvre entièrement l’image */
+/* opacité transition */
 .pa-icons-top > div:hover > a::after {
-  clip-path: inset(0);
-  transition: clip-path 0.18s ease-out;
+  opacity: 1;
+  transition: opacity 0.18s ease-out;
 }
 
-/* titre au premier plan */
+/* titre priorité */
 .pa-home h1.pa-title {
   position: relative;
   z-index: 2;
   pointer-events: none;
 }
 
-/* FIN ANIMATION */
+/* FIN ANIMATION ICONS TOP */
 
 /* TITRE */
 
