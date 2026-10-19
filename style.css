@@ -1299,7 +1299,7 @@ p.pa-intro-right-text {
 }
 
 /* titres verticaux */
-.pa-tab-label {
+label.pa-tab-label {
   display: flex;
   align-items: center;
   justify-content: flex-start;
