@@ -1219,24 +1219,37 @@ a.mainmenu img {
 
 /* ANIMATION ICONS TOP */
 
+/* Animation */
 .pa-icons-top {
   position: relative;
   z-index: 1;
   overflow: visible;
 }
 
-/* Retour lent à sa place */
-.pa-icons-top > div img {
+/* Le fond coloré se déplace avec l’image */
+.pa-icons-top > div > a {
+  display: block;
+  background-color: #d58b92;
   transform: translateY(0);
-  opacity: 1;
-  transition: transform 0.7s ease, opacity 0.7s ease;
+  transition: transform 0.7s ease;
 }
 
-/* Fuite rapide au survol */
-.pa-icons-top > div:hover img {
+/* Image visible au repos */
+.pa-icons-top > div > a img {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+/* Descente rapide */
+.pa-icons-top > div:hover > a {
   transform: translateY(45px);
-  opacity: 0.15;
-  transition: transform 0.18s ease-out, opacity 0.18s ease-out;
+  transition: transform 0.18s ease-out;
+}
+
+/* L’image disparaît, le fond coloré reste */
+.pa-icons-top > div:hover > a img {
+  opacity: 0;
+  transition: opacity 0.18s ease-out;
 }
 
 /* Titre devant les images */
@@ -1245,6 +1258,8 @@ a.mainmenu img {
   z-index: 2;
   pointer-events: none;
 }
+
+/* FIN ANIMATION */
 
 /* TITRE */
 
