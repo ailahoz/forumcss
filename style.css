@@ -6,7 +6,7 @@
 /*** LISTE DES BLOGS --------------- ***/
 
 .bloglist {
-    background: var(--neutral);
+    background: var(--neutral);z
     border-radius: 5px;
     display: grid;
     grid-template-columns: 65px auto;
@@ -1278,7 +1278,6 @@ p.pa-intro-right-text {
   margin-bottom: 30px;
 }
 
-@media not all{
 /* START PA TAB */
 
 /* conteneur des onglets */
@@ -1303,17 +1302,19 @@ p.pa-intro-right-text {
 .pa-tab-label {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex: 0 0 55px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 1;
   color: #000;
   cursor: pointer;
+  margin-bottom: 20%;
 }
+
 
 /* titre de l'onglet actif */
 .pa-tab-input:checked + .pa-tab-label {
@@ -1410,7 +1411,6 @@ p.pa-intro-right-text {
 }
 
 /* PA TAB END */
-} 
 
 
 /* PHOTO CENTRALE */
