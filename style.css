@@ -1217,30 +1217,6 @@ a.mainmenu img {
   max-height: 75px;
 }
 
-/* ANIMATION ICONS TOP */
-
-/* superposition des icônes et du titre */
-.pa-icons-top {
-  position: relative;
-  z-index: 1;
-  overflow: visible;
-}
-
-/* animation des icônes */
-.pa-icons-top > div {
-  transition: transform 0.3s ease;
-}
-
-.pa-icons-top > div:hover {
-  transform: translateY(20px);
-}
-
-/* le titre reste devant les images */
-.pa-home h1.pa-title {
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
-}
 
 /* TITRE */
 
