@@ -133,7 +133,7 @@
 
   --textColor: #232657;
   --textColorAccent: #000;
-
+    
   --border: 1px solid #e5e5e5;
 
   --shadowBox: 0 0 20px #23265730;
@@ -1278,6 +1278,7 @@ p.pa-intro-right-text {
   margin-bottom: 30px;
 }
 
+
 /* START PA TAB */
 
 /* conteneur des onglets */
@@ -1303,22 +1304,15 @@ p.pa-intro-right-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 55px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  flex-shrink: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  color: #000;
   cursor: pointer;
-}
-
-/* contenus fermés */
-.pa-tab-panel {
-  display: none;
-  min-width: 0;
-}
-
-/* contenu de l'onglet actif */
-.pa-tab-input:checked + .pa-tab-label + .pa-tab-panel {
-  display: block;
-  flex: 1;
 }
 
 /* titre de l'onglet actif */
@@ -1326,7 +1320,97 @@ p.pa-intro-right-text {
   color: #d58b92;
 }
 
+/* contenus fermés */
+.pa-tab-panel {
+  display: none;
+  flex: 1;
+  min-width: 0;
+  padding: 75px 15px 20px;
+}
+
+/* contenu de l'onglet actif */
+.pa-tab-input:checked + .pa-tab-label + .pa-tab-panel {
+  display: block;
+}
+
+/* titre du panel */
+.pa-panel-title {
+  margin: 0 0 18px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: left;
+  text-transform: lowercase;
+  color: #000;
+}
+
+/* texte du panel */
+.pa-panel-text {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  color: #000;
+}
+
+/* lien lire la suite */
+.pa-read-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/* bouton rond */
+.pa-read-more::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  border-radius: 50%;
+  background-color: #000;
+  transition: background-color 0.3s ease;
+}
+
+/* bouton au survol */
+.pa-read-more:hover::after {
+  background-color: #d58b92;
+}
+
+.pa-read-more:hover {
+  color: #000;
+}
+
+/* liens des annexes */
+.pa-panel-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.pa-panel-links a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 /* PA TAB END */
+
 
 /* PHOTO CENTRALE */
 
