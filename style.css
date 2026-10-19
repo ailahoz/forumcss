@@ -1278,7 +1278,7 @@ p.pa-intro-right-text {
   margin-bottom: 30px;
 }
 
-/*
+@media not all{
 /* START PA TAB */
 
 /* conteneur des onglets */
@@ -1410,7 +1410,7 @@ p.pa-intro-right-text {
 }
 
 /* PA TAB END */
-*/ 
+} 
 
 
 /* PHOTO CENTRALE */
