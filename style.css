@@ -1217,6 +1217,34 @@ a.mainmenu img {
   max-height: 75px;
 }
 
+/* ANIMATION ICONS TOP */
+
+.pa-icons-top {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Retour lent à sa place */
+.pa-icons-top > div img {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/* Fuite rapide au survol */
+.pa-icons-top > div:hover img {
+  transform: translateY(45px);
+  opacity: 0.15;
+  transition: transform 0.18s ease-out, opacity 0.18s ease-out;
+}
+
+/* Titre devant les images */
+.pa-home h1.pa-title {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
 
 /* TITRE */
 
