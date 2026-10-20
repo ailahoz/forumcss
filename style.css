@@ -1314,7 +1314,7 @@ a.mainmenu img {
   align-items: flex-start;
   padding: 0 15%;
   gap: 30%;
-    font-size:12px;
+  font-size:12px;
 }
 
 p.pa-intro-right-text {
@@ -1499,6 +1499,7 @@ label.pa-tab-label {
   align-items: flex-end;
   justify-content: space-around;
   margin-right: 5%;
+  gap: 20px;
 }
 
 /* STAFF */
