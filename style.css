@@ -1532,11 +1532,6 @@ label.pa-tab-label {
   margin-bottom: 20px;
 }
 
-.pa-staff-portraits {
-  display: flex;
-  gap: 20px;
-}
-
 .pa-staff-member {
   position: relative;
   display: block;
