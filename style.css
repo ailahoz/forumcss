@@ -1320,7 +1320,7 @@ a.mainmenu img {
 p.pa-intro-right-text {
   text-align: right !important;
 }
-
+@media not all{
 /* PA BODY */
 
 .pa-body {
@@ -1465,7 +1465,7 @@ label.pa-tab-label {
 }
 
 /* PA TAB END */
-
+}
 
 /* PHOTO CENTRALE */
 
