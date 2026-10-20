@@ -1314,7 +1314,7 @@ a.mainmenu img {
   align-items: flex-start;
   padding: 0 15%;
   gap: 30%;
-  font-size:12px;
+  font-size:12px !important;
 }
 
 p.pa-intro-right-text {
