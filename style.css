@@ -1498,7 +1498,6 @@ label.pa-tab-label {
   min-height: 0;
   max-height: none;
   overflow: visible;
-    gap: 10px;
 }
 
 /* LINKS */
@@ -1530,6 +1529,7 @@ label.pa-tab-label {
   align-items: stretch;
   justify-content: flex-end;
   padding: 0;
+    margin-top:10px;
 }
 
 .pa-home .pa-staff-label {
