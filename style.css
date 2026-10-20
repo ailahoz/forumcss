@@ -1379,7 +1379,7 @@ label.pa-tab-label {
   display: none;
   flex: 1;
   min-width: 0;
-  padding: 75px 15px 20px;
+  padding: 25px 15px 20px;
 }
 
 /* contenu de l'onglet actif */
