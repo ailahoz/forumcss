@@ -1487,9 +1487,9 @@ label.pa-tab-label {
  display: grid;
   flex: 1;
   grid-template-rows:
-    minmax(0, 25fr)
-    minmax(0, 45fr)
-    minmax(0, 30fr);
+    minmax(auto, 25fr)
+    minmax(auto, 45fr)
+    minmax(auto, 30fr);
   max-height: 300px;
   min-width: 0;
   min-height: 0;
@@ -1497,9 +1497,9 @@ label.pa-tab-label {
 }
 
 .pa-sidebar > * {
-  min-width: 0;
-  min-height: 0;
-  overflow: auto;
+  min-height: auto;
+  overflow: visible;
+  min-width: auto;
 }
 
 /* LINKS */
