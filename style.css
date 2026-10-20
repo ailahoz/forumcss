@@ -1498,6 +1498,7 @@ label.pa-tab-label {
   min-height: 0;
   max-height: none;
   overflow: visible;
+    gap: 10px;
 }
 
 /* LINKS */
