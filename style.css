@@ -1569,8 +1569,9 @@ label.pa-tab-label {
   flex: 0 0 70px;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  
   margin-right: 5%;
+  min-height: 0;
 }
 
 /* FIN PAGE D'ACCUEIL ---*/
