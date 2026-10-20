@@ -223,8 +223,6 @@ body {
  * comme les encadrés d'options, de rappel, etc... */
 .panel {
   background: var(--neutral);
-  border: var(--border);
-  border-radius: 5px;
 }
 
 .sidebar {
