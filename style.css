@@ -1486,8 +1486,8 @@ label.pa-tab-label {
   min-height: 0;
   box-sizing: border-box;
     grid-template-rows:
-    minmax(0, 40fr)
-    minmax(0, 60fr);
+    minmax(0, 45fr)
+    minmax(0, 55fr);
 }
 
 .pa-home .pa-sidebar > * {
