@@ -2666,15 +2666,18 @@ button.rep-button .rep-nb {
   border-radius: 3px;
 }
 
-.post_profile {
-  padding: 10px;
-  border-right: 1px solid var(--neutralDark);
-}
+@media not all {
 
-.post_pseudo {
-  font-weight: bold;
-}
+  .post_profile {
+    padding: 10px;
+    border-right: 1px solid var(--neutralDark);
+  }
 
+  .post_pseudo {
+    font-weight: bold;
+  }
+
+}
 /* Lien "@" de mention */
 a.fa-mention {
   cursor: pointer;
