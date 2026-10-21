@@ -1524,10 +1524,12 @@ label.pa-tab-label {
 
 .pa-home .pa-staff {
   display: flex;
+  align-self: end;
   align-items: stretch;
   justify-content: flex-end;
+  height: 145px;
+  margin: 0;
   padding: 0;
-    margin-top:10px;
 }
 
 .pa-home .pa-staff-label {
@@ -1535,6 +1537,7 @@ label.pa-tab-label {
   align-items: center;
   justify-content: flex-start;
   flex: 0 0 auto;
+  height: 100%;
   margin: 0;
   padding: 0;
   writing-mode: vertical-rl;
@@ -1602,6 +1605,7 @@ label.pa-tab-label {
 .pa-home .pa-staff-member:focus-visible .pa-staff-name {
   opacity: 1;
 }
+
 
 /* PA FOOTER */
 
