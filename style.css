@@ -496,7 +496,7 @@ form#quick_reply {
 /* Contenur général qui sert généralement de fond et/ou de contour*/
 .container {
   background: var(--neutralDark);
-  padding: 10px;
+  /*padding: 10px;*/
   border-radius: 5px;
 }
 
