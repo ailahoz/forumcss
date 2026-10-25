@@ -2576,35 +2576,6 @@ a.groups:last-child {
 /*** ------------------------------- ***/
 /*** SUJET ------------------------- ***/
 
-.post_row {
-  background: var(--neutral);
-  display: grid;
-  grid-template-rows: max-content auto;
-  grid-template-columns: min-content 1fr;
-  border-bottom: 1px solid var(--neutralDark);
-}
-
-div.post_row:nth-of-type(2) {
-  border-radius: 5px 5px 0 0;
-}
-
-div.post_row:last-of-type {
-  border-radius: 0 0 5px 5px;
-  border-bottom: none;
-}
-
-.post_details {
-  grid-column: 1 / span 2;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--neutralDark);
-  width: 100%;
-}
-
-.post_date {
-  flex-grow: 100;
-}
 
 /* BOUTONS D'EDITION DU MESSAGE --- */
 /* Conteneur boutons d'édition */
