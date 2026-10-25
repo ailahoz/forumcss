@@ -6,7 +6,7 @@
 /*** LISTE DES BLOGS --------------- ***/
 
 .bloglist {
-    background: var(--neutral);z
+    background: var(--neutral);
     border-radius: 5px;
     display: grid;
     grid-template-columns: 65px auto;
