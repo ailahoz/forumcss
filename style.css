@@ -21,7 +21,7 @@
 
 
 .bodoni-moda-font3 {
-  font-family: "Bodoni Moda", serif;
+  : "Bodoni Moda", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -212,7 +212,7 @@
 /* FOND DU FORUM ---*/
 body {
   background: var(--neutralDark);
-  font-family: var(--font);
+  font-family: var(--font2);
   font-size: var(--normal-size);
   color: var(--textColor);
   margin: 0 !important;
@@ -1215,7 +1215,7 @@ a.mainmenu img {
   margin: 0 auto;
   background: #fff;
   color: #090909;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font2);
   }
 
 /* ICONS */
@@ -1304,7 +1304,7 @@ a.mainmenu img {
   margin: 0;
   padding: 0;
   color: #090909;
-  font-family: 'Arial Black', Arial, sans-serif;
+    font-family: var(--font3);
   font-size: 85px;
   font-weight: 900;
   line-height: 1;
@@ -1374,7 +1374,7 @@ label.pa-tab-label {
   flex: 0 0 42px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font3);
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
@@ -1408,7 +1408,7 @@ label.pa-tab-label {
 .pa-panel-title {
   margin: 0 0 16px;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font3);
   font-size: 22px;
   font-weight: 400;
   line-height: 1.1;
@@ -1420,7 +1420,7 @@ label.pa-tab-label {
 /* texte du panel */
 .pa-panel-text {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -1436,7 +1436,7 @@ label.pa-tab-label {
   gap: 10px;
   width: 100%;
   margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
   font-size: 11px;
   font-weight: 400;
   line-height: 1;
