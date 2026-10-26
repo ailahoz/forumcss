@@ -208,10 +208,15 @@ body {
 
 /* BANNIERE ---*/
 /* Mettre la bannière en fond permet de la changer selon le thème clair ou sombre */
-@media not all { #header {
-  display: none !important;
-  }
-               }
+#header {
+  background-image: var(--header);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 900px;
+  height: 330px;
+  display: block;
+}
 
 /* Conteneur de toutes les sous-sections
  * comme les encadrés d'options, de rappel, etc... */
