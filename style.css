@@ -3,6 +3,30 @@
 
 /*** ------------------------------- ***/
 /*** LISTE DES BLOGS --------------- ***/
+/* font */
+
+.playfair-display-font1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.dm-sans-font2 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+}
+
+
+.bodoni-moda-font3 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
 
 .bloglist {
     background: var(--neutral);
