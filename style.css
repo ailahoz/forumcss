@@ -115,7 +115,7 @@
 /* VARIABLE DU MODE DE BASE (ici clair) */
 :root {
   color-scheme: light;
-  --header: url('https://i20.servimg.com/u/f20/17/61/80/05/random10.jpg');
+  --header: url('');
 
   --neutral: #fafbfc;
   --neutralDark: #f2f4f9;
@@ -147,7 +147,7 @@
 /* VARIABLES DU MODE INVERSE (ici sombre) */
 [data-color-scheme="dark"] {
   color-scheme: dark;
-  --header: url('https://i20.servimg.com/u/f20/17/61/80/05/random10.jpg');
+  --header: url('');
 
   --neutral: #1e212a;
   --neutralDark: #181a21;
@@ -587,26 +587,29 @@ a.specials_links:empty {
 /* Bouton de notification */
 #notiffi_button {
     position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 999;
-  color: #fff;
+    display: inline-flex;
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+    z-index: 999;
+    color: #fff;
 }
 
 /* Conteneur du nombre de notification non lues REMPLI */
 .unread_count {
   position: relative;
-  background: var(--neutralDarker);
-  border-radius: 5px;
-  width: 25px;
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  font-size: 12px;
-  scale: 1;
-  opacity: 1;
-  aspect-ratio: 1;
-  transition: scale ease-out .2s;
+    background: var(--neutralDarker);
+    border-radius: 5px;
+    width: 25px;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    scale: 1;
+    bottom: 4px;
+    opacity: 1;
+    aspect-ratio: 1;
+    transition: scale ease-out .2s;
 }
 
 /* Conteneur du nombre de notification non lues VIDE */
@@ -1111,6 +1114,7 @@ a.specials_links:empty {
     left: 0;
     right: 0;
     width: 100%;
+    height: 35px;
     box-sizing: border-box;
     z-index: 998;
     padding-right: 160px;
