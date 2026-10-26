@@ -115,7 +115,7 @@
 /* VARIABLE DU MODE DE BASE (ici clair) */
 :root {
   color-scheme: light;
-  --header: url('');
+  --header: url('https://i20.servimg.com/u/f20/17/61/80/05/random10.jpg');
 
   --neutral: #fafbfc;
   --neutralDark: #f2f4f9;
@@ -147,7 +147,7 @@
 /* VARIABLES DU MODE INVERSE (ici sombre) */
 [data-color-scheme="dark"] {
   color-scheme: dark;
-  --header: url('');
+  --header: url('https://i20.servimg.com/u/f20/17/61/80/05/random10.jpg');
 
   --neutral: #1e212a;
   --neutralDark: #181a21;
