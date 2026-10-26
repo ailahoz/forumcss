@@ -613,25 +613,24 @@ a.specials_links:empty {
 
 /* Menu des notifications FERMÉ */
 #notiffi_panel {
-  --menuSize: 500px;
-  /* taille du Menu */
-  width: var(--menuSize);
-  position: fixed;
-z-index: 999;
-  top: 0;
-  height: 100%;
-  right: calc(var(--menuSize) * -1);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: start;
-  background: var(--neutral);
-  border-left: 1px solid var(--neutralDark);
-  padding: 15px;
-  padding-top: 50px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all ease .7s;
+ --menuSize: 500px;
+    width: var(--menuSize);
+    position: fixed;
+    z-index: 999;
+    top: 35px;
+    height: 90%;
+    right: calc(var(--menuSize) * -1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    background: var(--neutral);
+    border-left: 1px solid var(--neutralDark);
+    padding: 15px;
+    padding-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .7s;
 }
 
 /* Menu des notifications OUVERT */
