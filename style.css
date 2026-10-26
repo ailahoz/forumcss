@@ -166,6 +166,11 @@
   --title-size: 22px;
 
   --font: "Open Sans";
+  --font1:"Playfair Display";
+  --font2:"DM Sans";
+  --font3:"Bodoni Moda";
+  
+  
 }
 
 /* VARIABLES DU MODE INVERSE (ici sombre) */
