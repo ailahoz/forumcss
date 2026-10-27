@@ -1212,7 +1212,7 @@ a.mainmenu img {
   max-width: 900px;
   container-type: inline-size;
   margin: 0 auto;
-  background: #fff;
+  background: var(--);
   font-family: var(--font2);
   }
 
@@ -1261,7 +1261,7 @@ a.mainmenu img {
   inset: 0;
   opacity: 0;
   pointer-events: none;
-    background: #d58b92;
+    background: var(--);
   transition: opacity 0.7s ease;
 }
 
@@ -1663,7 +1663,7 @@ label.pa-tab-label {
 
 .category,
 .topicslist-container {
-  background: #fff;
+  background: var(--);
    color: var(--);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -1747,7 +1747,7 @@ label.pa-tab-label {
   padding: 0 0 0 45px;
   border: none;
   border-radius: 0;
-  background: #fff;
+  background: var(--);
 }
 
 .forum + .forum {
@@ -1796,7 +1796,7 @@ label.pa-tab-label {
   content: "";
   flex: 0 0 100px;
   align-self: stretch;
-  background: #000 var(--forum-photo, none) center / cover no-repeat;
+  background: var(--) var(--forum-photo, none) center / cover no-repeat;
 }
 
 .forum-img {
@@ -1885,7 +1885,7 @@ label.pa-tab-label {
   width: 60px;
   height: 60px;
   margin: 0 auto 10px;
-  background: #000;
+  background: var(--);
 }
 
 .forum_avatar:not(:has(img)) {
@@ -2024,7 +2024,7 @@ label.pa-tab-label {
   border: none;
   border-bottom: 1px solid #000;
   border-radius: 0;
-  background: #fff;
+  background: var(--);
 }
 
 .topicslist-container .topicslist_row:last-child {
@@ -2048,11 +2048,11 @@ label.pa-tab-label {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #222;
+  background: var(--);
 }
 
 .topicslist_row.post_new .topicslist-dot {
-  background: #d58b92;
+  background: var(--);
 }
 
 .topicslist-container .topicslist-dot::after {
@@ -2211,7 +2211,7 @@ label.pa-tab-label {
   width: 60px;
   height: 60px;
   margin: 0;
-  background: #222;
+  background: var(--);
 }
 
 .topicslist-container .topicslist-avatar-lastpost img {
@@ -2257,7 +2257,7 @@ label.pa-tab-label {
   height: 12px;
   margin: 0;
   border-bottom: 1px solid #000;
-  background: #fff;
+  background: var(--);
 }
 
 /* AUCUN SUJET */
@@ -2291,7 +2291,7 @@ label.pa-tab-label {
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: #fff;
+  background: var(--);
   color: var(--);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -2364,7 +2364,7 @@ label.pa-tab-label {
   width: 100px;
   height: 240px;
   overflow: hidden;
-  background: #1c1c1c;
+  background: var(--);
 }
 
 .qeel #lastuser_avatar a {
@@ -2571,7 +2571,7 @@ label.pa-tab-label {
   width: 100px;
   height: 240px;
   overflow: hidden;
-  background: #1c1c1c;
+  background: var(--);
 }
 
 .qeel .qeel-group-photo img {
@@ -2883,7 +2883,7 @@ div.zpost.post_row:last-of-type {
   width: 100%;
   margin: 24px 0;
   padding: 0;
-  border: 1px solid #111;
+  border: 1px solid var(--);
   border-radius: 0;
   background: var(--);
  color: var(--);
@@ -2904,7 +2904,7 @@ div.zpost.post_row:last-of-type {
   padding: 12px 18px;
   border: 0;
   border-radius: 0;
-  background: #080808;
+  background: var(--);
  color: var(--);
   font-size: 12px;
 }
@@ -3124,7 +3124,7 @@ div.zpost.post_row:last-of-type {
   overflow: auto;
   border: 0;
   border-radius: 0;
-  background: #bdbdbb;
+  background: var(--);
    color: var(--);
   font: 400 12px/1.3 Arial, sans-serif;
   text-align: left;
@@ -3181,7 +3181,7 @@ div.zpost.post_row:last-of-type {
   overflow: hidden;
   border: 0;
   border-radius: 0;
-  background: #1c1c1c;
+  background: var(--);
 }
 
 .zpost .zpost-photo .zpost-label {
@@ -3281,9 +3281,9 @@ div.zpost.post_row:last-of-type {
   min-height: 24px;
   padding: 4px 10px;
   border: 0;
-  border-left: 1px solid #111;
+  border-left: 1px solid var(--);
   border-radius: 0;
-  background: #fff;
+  background: var(--);
 }
 
 .zpost > .zpost-contact::before,
