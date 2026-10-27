@@ -29,7 +29,7 @@
 
 
 .bloglist {
-    background: var(--neutral);
+    
     border-radius: 5px;
     display: grid;
     grid-template-columns: 65px auto;
@@ -40,17 +40,17 @@
 .bloglist_date {
     grid-row: 1 / span 2;
     padding: 10px;
-    border-right: 1px solid var(--neutralDark);
+    
     line-height: 22px;
     text-align: center;
 }
 
 .blog_daymonth {
-    font-size: var(--);
+    
 }
 
 .blog_year {
-    font-size: var(--);
+    
 }
 
 .bloglist_infos {
@@ -71,7 +71,7 @@
 /***  AFFICHAGE D'UN BLOG ---------- ***/
 
 .blog_post {
-    background: var(--neutral);
+    
     display: grid;
     grid-template-rows: auto auto;
     border-radius: 5px;
@@ -81,7 +81,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--neutralDark);
+    
 }
 
 .blog_author {
@@ -92,7 +92,7 @@
 /*** COMMENTAIRES D'UN BLOG -------- ***/
 
 .blog_comment {
-    border: var(--border);
+    
     padding: 10px;
     border-radius: 5px;
     margin: 5px auto 10px;
@@ -193,7 +193,7 @@
 
   --border: 1px solid #2b2e3b;
 
-  --shadowBox: 0 0 20px var(--neutralDark);
+  
 }
 
 /* S'applique à TOUS les éléments du forum*/
@@ -201,7 +201,7 @@
   box-sizing: border-box;
   /*évite que les éléments soient agrandis par le padding*/
   /* SCROLLBAR CUSTOM POUR MOZILLA */
-  scrollbar-color: var(--contrastLight) var(--neutralDark);
+  
   scrollbar-width: thin;
 }
 
@@ -210,12 +210,12 @@
 
 /* FOND DU FORUM ---*/
 body {
-  background-color: var(--color1);
-  font-family: var(--font2);
-  font-size: var(--normal-size);
-  color: var(--textColor);
+  
+  
+  
+  
   margin: 0 !important;
-  background-image: var(--bg-forum);
+  
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -235,14 +235,14 @@ background-attachment: fixed;
   /*largeur forum*/
   margin: 20px auto;
   padding: 20px;
-  background: var(--neutral);
+  
   border-radius: 5px;
 }
 
 /* BANNIERE ---*/
 /* Mettre la bannière en fond permet de la changer selon le thème clair ou sombre */
 #header {
-  background-image: var(--header);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -254,12 +254,12 @@ background-attachment: fixed;
 /* Conteneur de toutes les sous-sections
  * comme les encadrés d'options, de rappel, etc... */
 .panel {
-  background: var(--neutral);
+  
 }
 
 .sidebar {
   position: fixed;
-  background-color: var(--neutral);
+  
   inset: 0;
   width: max-content;
   display: flex;
@@ -289,7 +289,7 @@ background-attachment: fixed;
 /* Lien de renvoi haut/bas */
 .sidebar_bottom>a {
   padding: 5px 8px;
-  background: var(--neutralDark);
+  
   border-radius: 5px;
   text-align: center;
 }
@@ -320,16 +320,16 @@ background-attachment: fixed;
 }
 
 .color-scheme-toggle {
-  background-color: var(--neutralDark);
+  
   padding: 5px 8px;
-  font-size: var(--);
+  
   text-align: center;
   border-radius: 5px;
-  color: var(--textColor);
+  
 }
 
 .color-scheme-toggle:hover {
-  color: var(--accentClr);
+  
 }
 
 /****** ------------------------------------------------------------------------------
@@ -343,12 +343,12 @@ background-attachment: fixed;
 a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--textColorAccent);
+  
 }
 
 /*liens au survol*/
 a:hover {
-  color: var(--accentClr);
+  
 }
 
 /* Emoji mis par défaut de FA
@@ -362,10 +362,10 @@ a:hover {
 /* Utilisé pour des titres de pages */
 h1,
 h1.page-title {
-  color: var(--contrastLight);
+  
   margin: 10px 0 20px;
-  font-family: var(--font3);
-  font-size: var(--title-size);
+  
+  
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -375,18 +375,18 @@ h1.page-title {
 h2,
 .h2 {
   margin: 0;
-  font-size: var(--large-size);
-  font-weight: var(--);
+  
+  
 }
 
 /* Utilisé pour des titres de sous-sections, petit encadré, ...*/
 h3,
 .h3 {
-  color: var(--contrastLight);
+  
   padding-bottom: 10px;
   margin: 0;
-  font-size: var(--medium-size);
-  font-weight: var(--);
+  
+  
 }
 
 /*** --------------------------------------- ***/
@@ -397,16 +397,16 @@ input:is([type="text"], [type="password"], .inputbox),
 textarea {
   border: none;
   border-radius: 5px;
-  background: var(--neutralDark);
-  font-size: var(--normal-size);
-  color: var(--contrastLight) !important;
+  
+  
+  
   padding: 8px 10px;
 }
 
 /* Au focus */
 :focus:is(input:is([type="text"], [type="password"], .inputbox), textarea) {
   outline: none;
-  border: 1px solid var(--accentClr);
+  
 }
 
 /* BOUTONS D'INTERACTION --- *
@@ -414,18 +414,18 @@ textarea {
 input:is([type="submit"], [type="button"], [type="hidden"], [type="reset"]),
 .button,
 button {
-  font-size: var(--normal-size);
+  
   padding: 10px 15px !important;
   border-radius: 5px;
-  background: var(--neutralDarker);
-  color: var(--contrastLight);
+  
+  
   font-weight: 600;
   border: none;
 }
 
 /* Au survol */
 :hover:is(input:is([type="submit"], [type="button"], [type="hidden"], [type="reset"]), .button) {
-  color: var(--accentClr);
+  
 }
 
 /* Boutons désactivés */
@@ -450,15 +450,15 @@ button {
 /* MENUS DEROULANTS --- */
 select {
   background: transparent;
-  border: var(--border);
+  
   border-radius: 5px;
-  font-size: var(--normal-size);
+  
   padding: 8px 10px;
-  color: var(--textColor);
+  
 }
 
 select:focus-visible {
-  outline: 1px solid var(--accentClr);
+  
 }
 
 /*** ------------------------------- ***/
@@ -498,17 +498,17 @@ form#quick_reply {
 
 /*lien unique vers les pages numérotées*/
 .pagination span a {
-  font-size: var(--little-size);
+  
 }
 
 /*survol des liens uniques des pages*/
 .pagination span a:hover {
-  font-weight: var(--);
+  
 }
 
 /*lien actif : page sur laquelle vous vous trouvez */
 .pagination span strong {
-  background-color: var(--neutralDark);
+  
   border-radius: 3px;
   padding: 1px 4px;
 }
@@ -524,7 +524,7 @@ form#quick_reply {
 
 /* Contenur général qui sert généralement de fond et/ou de contour*/
 .container {
-  background: var(--neutralDark);
+  
   /*padding: 10px;*/
   border-radius: 5px;
 }
@@ -533,7 +533,7 @@ form#quick_reply {
 .separator {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: 1px solid var(--neutralDark);
+  
   clear: both;
   height: 1px;
   width: 100%;
@@ -541,7 +541,7 @@ form#quick_reply {
 
 hr {
   border: none;
-  border-top: var(--border);
+  
 }
 
 /* Titre d'un toggle */
@@ -564,7 +564,7 @@ summary {
   object-position: center;
   border-radius: 5px;
   margin-right: 10px;
-  background: var(--neutralDark);
+  
 }
 
 /* Permet d'aligner un élément à droite ou à gauche */
@@ -584,7 +584,7 @@ summary {
  * Contient des boutons ou des liens spéciaux */
 .links_bar {
   padding: 10px;
-  border: var(--border);
+  
   border-radius: 5px;
   clear: both;
 }
@@ -597,7 +597,7 @@ summary {
 /* Lien spécial mis en avant */
 .specials_links a,
 a.specials_links {
-  background: var(--neutralDark);
+  
   padding: 2px 6px;
   border-radius: 5px;
 }
@@ -631,13 +631,13 @@ a.specials_links:empty {
 /* Conteneur du nombre de notification non lues REMPLI */
 .unread_count {
   position: relative;
-    background: var(--neutralDarker);
+    
     border-radius: 5px;
     width: 25px;
     display: grid;
     place-items: center;
-    font-weight: var(--);
-    font-size: var(--);
+    
+    
     scale: 1;
     bottom: 4px;
     opacity: 1;
@@ -656,18 +656,18 @@ a.specials_links:empty {
 /* Menu des notifications FERMÉ */
 #notiffi_panel {
  --menuSize: 500px;
-    width: var(--menuSize);
+    
     position: fixed;
     z-index: 999;
     top: 35px;
     height: 90%;
-    right: calc(var(--menuSize) * -1);
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: start;
-    background: var(--neutral);
-    border-left: 1px solid var(--neutralDark);
+    
+    
     padding: 15px;
     padding-top: 50px;
     opacity: 0;
@@ -687,7 +687,7 @@ a.specials_links:empty {
   width: 100%;
   overflow: auto;
   max-height: 100%;
-  background: var(--neutralDark);
+  
   padding: 10px;
   border-radius: 10px;
   -ms-overflow-style: none;
@@ -702,7 +702,7 @@ a.specials_links:empty {
 /* Conteneur des notifications VIDE */
 .no_notification {
   text-align: center;
-  font-style: var(--);
+  
 }
 
 /* Conteneur du footer du menu
@@ -722,12 +722,11 @@ a.specials_links:empty {
   /* Bouton d'action */
   button {
     padding: 2px 10px;
-    background: var(--neutralDark);
+    
     border-radius: 5px;
 
     &:hover {
-      color: var(--accentClr)
-    }
+      }
   }
 }
 
@@ -744,7 +743,7 @@ a.specials_links:empty {
 
   /* Notification au survol */
   &:hover {
-    border-color: var(--neutralDarker);
+    
   }
 }
 
@@ -761,7 +760,7 @@ a.specials_links:empty {
 
 /* Apparence d'une notification NON LUE */
 .notification.unread {
-  background-color: var(--neutral);
+  
 }
 
 /* Conteneur des détails de la notification (avatar, icone) */
@@ -772,7 +771,7 @@ a.specials_links:empty {
 
 /* Conteneur de l'avatar */
 .notif_avatar {
-  background: var(--neutral);
+  
   height: 35px;
   border-radius: 5px;
   aspect-ratio: 1;
@@ -792,19 +791,19 @@ a.specials_links:empty {
   position: absolute;
   bottom: -5px;
   right: -5px;
-  background: var(--neutral);
+  
   width: 18px;
   aspect-ratio: 1;
   display: grid;
   place-items: center;
   border-radius: 20px;
-  font-size: var(--);
+  
 }
 
 /* Icone lorsque la notification est non lue */
 .notification.unread .notif_icon {
-  color: var(--neutral);
-  background: var(--accentClr);
+  
+  
 }
 
 /* Conteneur du texte et la date de la notification */
@@ -814,7 +813,7 @@ a.specials_links:empty {
 
 /* Date de la notification */
 .notif_time {
-  font-size: var(--little-size);
+  
   opacity: .8;
   margin-top: 5px;
 }
@@ -823,7 +822,7 @@ a.specials_links:empty {
 .notif_close {
   background: transparent;
   align-self: start;
-  font-size: var(--);
+  
   line-height: 0;
   opacity: 0;
   border-radius: 100px;
@@ -845,7 +844,7 @@ a.specials_links:empty {
   z-index: 99;
   bottom: 10px;
   right: 10px;
-  background: var(--neutralDarker);
+  
   transform: translateY(100%);
   opacity: 0;
   filter: blur(5px);
@@ -860,8 +859,8 @@ a.specials_links:empty {
 }
 
 .alert_close {
-  background: var(--neutral);
-  font-size: var(--);
+  
+  
   line-height: 0;
   border-radius: 100px;
   aspect-ratio: 1;
@@ -880,7 +879,7 @@ a.specials_links:empty {
 /* BARRE SWITCHEROO --- */
 /* BARRE --- */
 .switcheroo {
-  color: var(--textColor);
+  
 }
 
 /* Positionnement des ronds */
@@ -901,18 +900,18 @@ a.specials_links:empty {
   position: relative;
   display: grid;
   place-items: center;
-  background-color: var(--neutralDark);
+  
   width: 35px;
   height: 35px;
   border-radius: 50%;
   cursor: pointer;
   outline: 5px solid transparent;
-  transition: border-radius 128ms var(--ease);
+  
 }
 
 /* Rond au survol */
 .switcheroo__squircle:hover {
-  outline-color: var(--neutralDarker);
+  
   border-radius: 8px;
 }
 
@@ -933,31 +932,31 @@ a.specials_links:empty {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-  transition: border-radius 128ms var(--ease);
+  
   position: relative;
 }
 
 /* Avatar du compte connecté */
 .switcheroo__squircle.active,
 .switcheroo__squircle.active img {
-  outline-color: var(--neutralDark);
+  
   cursor: default;
 }
 
 /* AJOUTER UN COMPTE ---*/
 /* button : ajouter un compte */
 .switcheroo__squircle--button {
-  transition: border-radius 128ms var(--ease);
-  color: var(--contrastLight);
+  
+  
 }
 
 /* icon plus */
 .switcheroo__squircle--button i {
-  font-size: var(--);
+  
 }
 
 .switcheroo__squircle--button:hover {
-  color: var(--accentClr);
+  
 }
 
 /* Bouton de suppression */
@@ -970,12 +969,12 @@ a.specials_links:empty {
   top: -7px;
   right: -7px;
   border-radius: 50%;
-  background-color: var(--accentClr);
+  
   transform: scale(0);
   opacity: 1;
-  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
+  
   cursor: pointer;
-  color: var(--neutral);
+  
   line-height: 0;
 }
 
@@ -988,7 +987,7 @@ a.specials_links:empty {
 
 /* Conteneur du pseudo */
 .switcheroo__popper {
-  background-color: var(--neutralDarker);
+  
   padding: 0.3rem 1rem;
   position: absolute;
   width: -webkit-max-content;
@@ -996,9 +995,9 @@ a.specials_links:empty {
   border-radius: 5px;
   z-index: 0;
   opacity: 0;
-  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+  
   pointer-events: none;
-  color: var(--textColor);
+  
   left: 155%;
   top: 50%;
   transform-origin: left;
@@ -1011,7 +1010,7 @@ a.specials_links:empty {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: var(--neutralDarker);
+  
   z-index: -1;
   left: -3px;
   top: 50%;
@@ -1042,7 +1041,7 @@ a.specials_links:empty {
   width: 100%;
   height: 100%;
   transition: 0.2s opacity ease;
-  background: var(--);
+  
 }
 
 /* Boîte de connexion */
@@ -1057,9 +1056,9 @@ a.specials_links:empty {
   transition: 0.2s opacity ease;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  background: var(--neutral);
+  
   padding: 50px;
-  box-shadow: var(--shadowBox);
+  
 }
 
 /* Champs à remplir */
@@ -1073,9 +1072,9 @@ a.specials_links:empty {
 /* Nom du champ */
 .switcheroo__form-label {
   margin-bottom: 8px;
-  font-size: var(--);
+  
   text-transform: uppercase;
-  font-weight: var(--);
+  
 }
 
 /* Zone de texte */
@@ -1083,8 +1082,8 @@ a.specials_links:empty {
   padding: 6px !important;
   border-radius: 4px;
   width: 100%;
-  background-color: var(--neutral);
-  color: var(--contrastLight);
+  
+  
   cursor: text;
 }
 
@@ -1096,17 +1095,17 @@ a.specials_links:empty {
   outline: none;
   box-shadow: none;
   text-transform: uppercase;
-  font-size: var(--);
+  
   align-self: center;
-  background-color: var(--accentClr);
+  
   cursor: pointer;
-  color: var(--neutral);
-  font-weight: var(--);
+  
+  
   margin-top: 10px;
 }
 
 .switcheroo__form-button:hover {
-  background: var(--contrastLight);
+  
 }
 
 .monomer-modal.monomer-open,
@@ -1116,7 +1115,7 @@ a.specials_links:empty {
 
 /* Fermer la boîte de connexion */
 .monomer-close {
-  font-size: var(--);
+  
   line-height: 12px;
   width: 18px;
   height: 18px;
@@ -1124,17 +1123,17 @@ a.specials_links:empty {
   top: 5px;
   right: 5px;
   cursor: pointer;
-  color: var(--textColor);
+  
   border: 0;
   outline: none;
-  background: var(--contrastLighter);
+  
   border-radius: 4px;
   padding: 0;
   padding-left: 1px;
 }
 
 .monomer-close:hover {
-  background: var(--contrastLight);
+  
 }
 
 /*** ------------------------------- ***/
@@ -1153,7 +1152,7 @@ a.specials_links:empty {
     padding-right: 160px;
   padding: 5px;
 
-  background-color: var(--);
+  
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
 
@@ -1186,7 +1185,7 @@ a.mainmenu {
 
 /* Lien navigation au survol*/
 a.mainmenu:hover {
-  background: var(--neutral);
+  
   border-radius: 5px;
 }
 
@@ -1200,8 +1199,8 @@ a.mainmenu img {
 .hl_bandeau {
     display: flex;
     flex-wrap: wrap;
-    background: var(--FAM-chatBackground);
-    font-family: var(--font);
+    
+    
     justify-content: space-between;
     width: 900px;
   height: 100px;
@@ -1225,8 +1224,8 @@ a.mainmenu img {
 
 .bandeau_gauche h1 {
     text-align: center;
-    font: 20px var(--font);
-    font-weight: var(--);
+    
+    
     color: #fff;
     margin: 0px 0 5px 0;
 }
@@ -1243,10 +1242,10 @@ a.mainmenu img {
     padding: 4px 8px;
     margin-right: 5px;
     color: #fff;
-    font-family: var(--font);
-    font-size: var(--);
+    
+    
     text-align: center;
-    font-weight: var(--);
+    
     letter-spacing: 0.4px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1278,11 +1277,11 @@ img.image_right {
 .hl_bandeau_right h1 {
     align-self: center;
     text-transform: lowercase;
-    font: var(--font7);
-  font-size: var(--);
+    
+  
     text-align: center;
-    font-style: var(--);
-    color: var(--);
+    
+    
     margin: 0px 0 5px 0;
 }
 
@@ -1292,14 +1291,14 @@ img.image_right {
     padding: 4px 8px;
     margin-right: 5px;
     color: #fff;
-    font-family: var(--font);
-    font-size: var(--);
+    
+    
     text-align: center;
-    font-weight: var(--);
+    
     letter-spacing: 0.4px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: var(--);
+    
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
@@ -1347,7 +1346,7 @@ img.image_right {
     padding: 5px;
     border: none;
     background: transparent;
-    color: var(--color1);
+    
     cursor: pointer;
 }
 
@@ -1357,7 +1356,7 @@ img.image_right {
 }
 
 .hv-profil-btn:hover {
-    color: var(--color2);
+    
 }
 
 /* PANNEAU */
@@ -1374,9 +1373,9 @@ img.image_right {
     width: 520px;
     padding: 20px;
 
-    background: var(--neutral);
-    border: 1px solid var(--neutralDark);
-    box-shadow: 0 8px 25px var(--);
+    
+    
+    
 }
 
 .hv-profil-menu[hidden] {
@@ -1389,7 +1388,7 @@ img.image_right {
     height: 295px;
     flex-shrink: 0;
     padding: 5px;
-    border: 1px solid var(--contrast);
+    
 }
 
 .hv-profil-avatar img {
@@ -1409,19 +1408,19 @@ img.image_right {
 .hv-profil-liens a {
     display: block;
     padding: 6px 0;
-    border-bottom: 2px solid var(--neutralDark);
+    
 
-    font-family: var(--font3);
-    font-size: var(--);
+    
+    
     line-height: 1.3;
-    color: var(--contrast);
+    
     text-decoration: none;
 
     transition: color .2s, padding-left .2s;
 }
 
 .hv-profil-liens a:hover {
-    color: var(--color1);
+    
     padding-left: 6px;
 }
 
@@ -1431,7 +1430,7 @@ img.image_right {
 /* Barre défilante */
 .module {
   border-radius: 5px;
-  border: var(--border);
+  
   margin: 10px 0;
   padding: 4px 8px;
 }
@@ -1446,8 +1445,8 @@ img.image_right {
   max-width: 900px;
   container-type: inline-size;
   margin: 0 auto;
-  background: var(--);
-  font-family: var(--font2);
+  
+  
   }
 
 /* ICONS */
@@ -1495,7 +1494,7 @@ img.image_right {
   inset: 0;
   opacity: 0;
   pointer-events: none;
-    background: var(--);
+    
   transition: opacity 0.7s ease;
 }
 
@@ -1535,9 +1534,9 @@ img.image_right {
   width: 100%;
   margin: 0;
   padding: 0;
-    font-family: var(--font3);
-  font-size: var(--);
-  font-weight: var(--);
+    
+  
+  
   line-height: 1;
   letter-spacing: -0.05em;
   white-space: nowrap;
@@ -1560,7 +1559,7 @@ img.image_right {
   align-items: flex-start;
   padding: 0 15%;
   gap: 30%;
-  font-size: var(--) !important;
+  
 }
 
 p.pa-intro-right-text {
@@ -1605,9 +1604,9 @@ label.pa-tab-label {
   flex: 0 0 42px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-    font-family: var(--font3);
-  font-size: var(--);
-  font-weight: var(--);
+    
+  
+  
   line-height: 1;
   cursor: pointer;
   margin-bottom: 0;
@@ -1615,7 +1614,7 @@ label.pa-tab-label {
 
 /* titre de l'onglet actif */
 .pa-tab-input:checked + .pa-tab-label {
-  color: var(--color2);
+  
 }
 
 /* contenus fermés */
@@ -1638,24 +1637,24 @@ label.pa-tab-label {
 .pa-panel-title {
   margin: 0 0 16px;
   padding: 0;
-    font-family: var(--font3);
-  font-size: var(--);
-  font-weight: var(--);
+    
+  
+  
   line-height: 1.1;
   text-align: left;
   text-transform: lowercase;
-  color: var(--);
+  
 }
 
 /* texte du panel */
 .pa-panel-text {
   margin: 0;
-    font-family: var(--font2);
-  font-size: var(--);
-  font-weight: var(--);
+    
+  
+  
   line-height: 1.5;
   text-align: left;
-   color: var(--);
+   
 }
 
 /* lien lire la suite */
@@ -1666,13 +1665,13 @@ label.pa-tab-label {
   gap: 10px;
   width: 100%;
   margin-top: 20px;
-    font-family: var(--font2);
-  font-size: var(--);
-  font-weight: var(--);
+    
+  
+  
   line-height: 1;
   text-transform: lowercase;
   text-decoration: none;
-   color: var(--);
+   
 }
 
 /* bouton rond */
@@ -1683,17 +1682,17 @@ label.pa-tab-label {
   height: 12px;
   flex: 0 0 12px;
   border-radius: 50%;
-  background-color: var(--);
+  
   transition: background-color 0.3s ease;
 }
 
 /* bouton au survol */
 .pa-read-more:hover::after {
-  background-color: var(--);
+  
 }
 
 .pa-read-more:hover {
-  color: var(--);
+  
 }
 
 /* liens des annexes */
@@ -1705,9 +1704,9 @@ label.pa-tab-label {
 }
 
 .pa-panel-links a {
-  font-family: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
 }
 
 /* PA TAB END */
@@ -1796,8 +1795,8 @@ label.pa-tab-label {
   padding: 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
   line-height: 1;
 }
 
@@ -1846,10 +1845,10 @@ label.pa-tab-label {
   justify-content: center;
   box-sizing: border-box;
   padding: 5px;
-  background-color: var(--);
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+   
+  
+  
   text-align: center;
   opacity: 0;
   transition: opacity .3s ease;
@@ -1897,9 +1896,9 @@ label.pa-tab-label {
 
 .category,
 .topicslist-container {
-  background: var(--);
-   color: var(--);
-  font-family: var(--);
+  
+   
+  
 }
 
 .category,
@@ -1931,7 +1930,7 @@ label.pa-tab-label {
 .forum_subforums a:hover,
 .topicslist-container a.topictitle:hover,
 .topicslist-pagination a:hover {
-  color: var(--);
+  
 }
 
 /* CATÉGORIES */
@@ -1954,7 +1953,7 @@ label.pa-tab-label {
 .cate_title h2 {
   margin: 0;
   padding: 20px 0 0;
-  color: var(--);
+  
   font-size: 28px;
   font-weight: 700;
   line-height: 1.1;
@@ -1967,7 +1966,7 @@ label.pa-tab-label {
 .forums {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--);
+  
 }
 
 /* FORUMS STRUCTURE */
@@ -1981,11 +1980,11 @@ label.pa-tab-label {
   padding: 0 0 0 45px;
   border: none;
   border-radius: 0;
-  background: var(--);
+  
 }
 
 .forum + .forum {
-  border-top: 1px solid var(--);
+  
 }
 
 /* TITRE VERTICAL */
@@ -1999,10 +1998,10 @@ label.pa-tab-label {
   width: 45px;
   min-width: 0;
   padding: 10px 7px;
-  border-right: 1px solid var(--);
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
+  
   line-height: 1.1;
   text-transform: uppercase;
   writing-mode: vertical-rl;
@@ -2030,7 +2029,7 @@ label.pa-tab-label {
   content: "";
   flex: 0 0 100px;
   align-self: stretch;
-  background: var(--) var(--forum-photo, none) center / cover no-repeat;
+  
 }
 
 .forum-img {
@@ -2061,9 +2060,9 @@ label.pa-tab-label {
   margin: 0;
   padding: 0;
   float: none;
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -2080,7 +2079,7 @@ label.pa-tab-label {
   padding: 0 10px 0 0;
   align-self: stretch;
   overflow: hidden auto;
-  font-size: var(--);
+  
   line-height: 1.25;
   text-transform: lowercase;
   overflow-wrap: anywhere;
@@ -2119,7 +2118,7 @@ label.pa-tab-label {
   width: 60px;
   height: 60px;
   margin: 0 auto 10px;
-  background: var(--);
+  
 }
 
 .forum_avatar:not(:has(img)) {
@@ -2155,8 +2154,8 @@ label.pa-tab-label {
   min-width: 0;
   margin: 0;
   padding: 0;
-  color: var(--);
-  font-size: var(--);
+  
+  
   line-height: 1.5;
   text-align: center;
   text-transform: lowercase;
@@ -2165,9 +2164,9 @@ label.pa-tab-label {
 
 .forum_lastpost .lastpost_link {
   display: inline-block;
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.1;
 }
 
@@ -2181,7 +2180,7 @@ label.pa-tab-label {
   min-height: 70px;
   margin: 0;
   padding: 10px;
-  border-top: 1px solid var(--);
+  
 }
 
 .forum_details:not(:has(.forum_subforums a)) {
@@ -2200,7 +2199,7 @@ label.pa-tab-label {
   gap: 0;
   width: 100%;
   max-height: 84px;
-  font-size: var(--);
+  
   
 }
 
@@ -2214,9 +2213,9 @@ label.pa-tab-label {
   width: 48%;
   min-width: 0;
   padding: 0;
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+   
+  
+  
   line-height: 23px;
   text-align: left;
   text-transform: uppercase;
@@ -2256,9 +2255,9 @@ label.pa-tab-label {
   margin: 0;
   padding: 12px 15px;
   border: none;
-  border-bottom: 1px solid var(--);
+  
   border-radius: 0;
-  background: var(--);
+  
 }
 
 .topicslist-container .topicslist_row:last-child {
@@ -2282,11 +2281,11 @@ label.pa-tab-label {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--);
+  
 }
 
 .topicslist_row.post_new .topicslist-dot {
-  background: var(--);
+  
 }
 
 .topicslist-container .topicslist-dot::after {
@@ -2322,9 +2321,9 @@ label.pa-tab-label {
 }
 
 .topicslist-container a.topictitle {
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.2;
   text-transform: lowercase;
   overflow-wrap: anywhere;
@@ -2333,9 +2332,9 @@ label.pa-tab-label {
 /* TYPE DE SUJET */
 
 .topicslist-container .topic-type {
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   text-transform: uppercase;
 }
 
@@ -2352,9 +2351,9 @@ label.pa-tab-label {
   align-items: baseline;
   gap: 8px;
   margin: 0;
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.2;
   text-transform: lowercase;
 }
@@ -2364,7 +2363,7 @@ label.pa-tab-label {
 }
 
 .topic-author-separator {
-  color: var(--);
+  
 }
 
 /* INDICATEUR DE PARTICIPATION */
@@ -2375,9 +2374,9 @@ label.pa-tab-label {
 
 .topicslist-container .topic-participated:has(img)::after {
   content: "//";
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
 }
 
 /* DESCRIPTION SOUS FORUM */
@@ -2389,9 +2388,9 @@ label.pa-tab-label {
   padding: 0;
   border: none;
   background: transparent;
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+   
+  
+  
   line-height: 1.35;
   overflow-wrap: anywhere;
 }
@@ -2402,8 +2401,8 @@ label.pa-tab-label {
   display: block;
   margin: 5px 0 0;
   padding: 0;
-  color: var(--);
-  font-size: var(--);
+  
+  
   line-height: 1.4;
 }
 
@@ -2414,7 +2413,7 @@ label.pa-tab-label {
 .topicslist-pagination a {
   display: inline-block;
   margin: 0 3px;
-  color: var(--);
+  
 }
 
 /* STATISTIQUES SUR UNE LIGNE */
@@ -2430,9 +2429,9 @@ label.pa-tab-label {
   margin: 0;
   padding: 0;
   border: none;
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+   
+  
+  
   line-height: 1.3;
   text-align: right;
   text-transform: none;
@@ -2445,7 +2444,7 @@ label.pa-tab-label {
   width: 60px;
   height: 60px;
   margin: 0;
-  background: var(--);
+  
 }
 
 .topicslist-container .topicslist-avatar-lastpost img {
@@ -2466,21 +2465,21 @@ label.pa-tab-label {
 }
 
 .topicslist-container .topicslist-last-author {
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+   
+  
+  
   line-height: 1.2;
   text-transform: lowercase;
 }
 
 .topicslist-container .topicslist-last-author strong {
-  font-weight: var(--);
+  
 }
 
 .topicslist-container .topicslist-last-date {
   margin-top: 4px;
- color: var(--);
-  font-size: var(--);
+ 
+  
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -2491,15 +2490,15 @@ label.pa-tab-label {
   height: 12px;
   margin: 0;
   border-bottom: 1px solid #000;
-  background: var(--);
+  
 }
 
 /* AUCUN SUJET */
 
 .topicslist-empty {
   padding: 25px;
- color: var(--);
-  font-size: var(--);
+ 
+  
   text-align: center;
 }
 
@@ -2525,10 +2524,10 @@ label.pa-tab-label {
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: var(--);
-  color: var(--);
-  font-family: var(--);
-  font-size: var(--);
+  
+  
+  
+  
   line-height: 1.5;
 }
 
@@ -2542,7 +2541,7 @@ label.pa-tab-label {
 }
 
 .qeel a:hover {
-   color: var(--);
+   
 }
 
 /* BIENVENUE + AVATAR DU DERNIER INSCRIT */
@@ -2579,16 +2578,16 @@ label.pa-tab-label {
 }
 
 .qeel .qeel-welcome {
-  font-family: var(--);
-  font-size: var(--);
+  
+  
   line-height: 1.2;
 }
 
 .qeel .qeel-newest-link {
   max-width: 100%;
   overflow-wrap: anywhere;
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
   text-transform: uppercase;
 }
 
@@ -2598,7 +2597,7 @@ label.pa-tab-label {
   width: 100px;
   height: 240px;
   overflow: hidden;
-  background: var(--);
+  
 }
 
 .qeel #lastuser_avatar a {
@@ -2679,9 +2678,9 @@ label.pa-tab-label {
   box-shadow: none;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-   color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+   
+  
+  
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
@@ -2690,7 +2689,7 @@ label.pa-tab-label {
 
 .qeel .qeel-tab-label:hover,
 .qeel .qeel-tab-input:checked + .qeel-tab-label {
-  color: var(--);
+  
 }
 
 .qeel .qeel-tab-input:checked + .qeel-tab-label {
@@ -2730,9 +2729,9 @@ label.pa-tab-label {
 
 .qeel .qeel-panel-title {
   margin: 0 0 15px;
-  font-family: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.2;
 }
 
@@ -2740,8 +2739,8 @@ label.pa-tab-label {
 
 .qeel #total_users {
   margin-bottom: 12px;
-   color: var(--);
-  font-size: var(--);
+   
+  
   line-height: 1.4;
   text-transform: lowercase;
 }
@@ -2749,14 +2748,14 @@ label.pa-tab-label {
 .qeel #online_users,
 .qeel #last_connected {
   height: auto;
-  font-size: var(--);
+  
   line-height: 1.6;
   text-transform: lowercase;
 }
 
 .qeel #online_users a,
 .qeel #last_connected a {
-  font-weight: var(--);
+  
   text-transform: uppercase;
 }
 
@@ -2779,9 +2778,9 @@ label.pa-tab-label {
 .qeel .credits {
   margin-top: 15px;
   padding-top: 12px;
-  border-top: 1px solid var(--);
- color: var(--);
-  font-size: var(--);
+  
+ 
+  
   line-height: 1.5;
 }
 
@@ -2805,7 +2804,7 @@ label.pa-tab-label {
   width: 100px;
   height: 240px;
   overflow: hidden;
-  background: var(--);
+  
 }
 
 .qeel .qeel-group-photo img {
@@ -2844,9 +2843,9 @@ label.pa-tab-label {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   line-height: 1.2;
   text-align: left;
   text-transform: uppercase;
@@ -2856,7 +2855,7 @@ label.pa-tab-label {
 }
 
 .qeel .qeel-groups a.groups:hover {
-   color: var(--);
+   
   opacity: 1;
 }
 
@@ -2888,14 +2887,14 @@ label.pa-tab-label {
 .navigation_chain a:before {
   content: "›";
   /*symbole ou texte modifiable*/
-  font-size: var(--normal-size);
+  
   margin-right: 3px;
 }
 
 /* BOUTONS DE MESSAGE : Répondre, Nouveau,... ---*
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body) et les MP (privmsgs_body) */
 .buttons {
-  background: var(--neutralDark);
+  
   padding: 1px 8px;
   margin-right: 5px;
   border-radius: 5px;
@@ -2913,10 +2912,10 @@ label.pa-tab-label {
 }
 
 #moderation_forum_tools a {
-  background: var(--neutralDark);
+  
   border-radius: 5px;
   padding: 2px 8px;
-  font-size: var(--normal-size);
+  
 }
 
 /*** ------------------------------- ***/
@@ -2925,14 +2924,14 @@ label.pa-tab-label {
 /* Bloc de description du forum */
 .forum-page_desc {
   margin: 0 0 20px;
-  background: var(--neutral);
+  
   border-radius: 5px;
   padding: 10px;
 }
 
 /* Conteneur sujet dans la liste */
 .topicslist_row {
-  background: var(--neutral);
+  
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
@@ -2950,7 +2949,7 @@ label.pa-tab-label {
 .topicslist-img {
   width: 50px;
   height: 50px;
-  background: var(--neutralDark);
+  
 }
 
 .topicslist_infos {
@@ -2959,7 +2958,7 @@ label.pa-tab-label {
 
 /*titre du sujet*/
 .topictitle {
-  font-size: var(--medium-size);
+  
   /* permet de raccourir les titres trop long ainsi : "Titre du suj..." */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2991,7 +2990,7 @@ label.pa-tab-label {
   object-position: center;
   width: 50px;
   height: 50px;
-  background: var(--neutralDark);
+  
 }
 
 .topicslist-lastpost {
@@ -2999,7 +2998,7 @@ label.pa-tab-label {
 }
 
 .topicslist-description {
-  border-top: 1px solid var(--neutralDark);
+  
   padding-top: 5px;
   width: 100%;
 }
@@ -3007,7 +3006,7 @@ label.pa-tab-label {
 /* ligne qui séparent les annonces et les notes des autres sujets (à activer dans "message > configuration") */
 .topic_separator {
   height: 5px;
-  background: var(--neutral);
+  
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -3016,14 +3015,14 @@ label.pa-tab-label {
 #sort-topics {
   position: relative;
   display: inline;
-  background: var(--neutralDark);
+  
   margin: 10px 0;
 }
 
 .sort-form {
   width: max-content;
-  background: var(--neutral);
-  border: 1px solid var(--neutralDarker);
+  
+  
   border-radius: 5px;
   padding: 10px;
   position: absolute;
@@ -3052,12 +3051,12 @@ label.pa-tab-label {
 
 /* Avatar du participant*/
 .poster {
-  background: var(--poster-avatar);
+  
   height: 30px;
   width: 30px;
   border-radius: 100%;
   margin-left: -8px;
-  border: 2px solid var(--neutralDark);
+  
   background-size: cover;
   background-position: center;
 }
@@ -3088,7 +3087,7 @@ label.pa-tab-label {
   position: absolute;
   top: 29px;
   width: 150px;
-  background: var(--neutralDarker);
+  
   padding: 10px;
   border-radius: 5px;
 }
@@ -3117,10 +3116,10 @@ div.zpost.post_row:last-of-type {
   width: 100%;
   margin: 24px 0;
   padding: 0;
-  border: 1px solid var(--);
+  
   border-radius: 0;
-  background: var(--);
- color: var(--);
+  
+ 
 }
 
 /* BANDEAU SUPÉRIEUR */
@@ -3138,8 +3137,8 @@ div.zpost.post_row:last-of-type {
   padding: 12px 18px;
   border: 0;
   border-radius: 0;
-  background: var(--);
- color: var(--);
+  
+ 
   font-size: 12px;
 }
 
@@ -3153,17 +3152,17 @@ div.zpost.post_row:last-of-type {
 }
 
 .zpost .post_date > a {
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .zpost .post_date time {
-  color: var(--);
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
+  
 }
 
 /* BOUTONS DU MESSAGE ET MENTION */
@@ -3192,8 +3191,8 @@ div.zpost.post_row:last-of-type {
 
 .zpost ul.profile-icons a,
 .zpost a.fa-mention {
-   color: var(--);
-  font: var(--);
+   
+  
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -3202,7 +3201,7 @@ div.zpost.post_row:last-of-type {
 
 .zpost ul.profile-icons a:hover,
 .zpost a.fa-mention:hover {
-  color: var(--);
+  
 }
 
 .zpost .profile-icons a[href=""] {
@@ -3230,14 +3229,14 @@ div.zpost.post_row:last-of-type {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-   color: var(--);
-  font: var(--);
+   
+  
   white-space: nowrap;
   cursor: pointer;
 }
 
 .zpost button.rep-button:hover {
-  color: var(--);
+  
 }
 
 .zpost button.rep-button .rep-nb {
@@ -3261,8 +3260,8 @@ div.zpost.post_row:last-of-type {
   padding: 16px 10px 0;
   border: 0;
   border-radius: 0;
-  background: var(--);
-  color: var(--);
+  
+  
   text-align: left;
 }
 
@@ -3279,8 +3278,8 @@ div.zpost.post_row:last-of-type {
   display: block;
   margin: 0;
   padding: 0;
-   color: var(--);
-  font: var(--);
+   
+  
   text-align: left;
   text-transform: uppercase;
   overflow-wrap: anywhere;
@@ -3297,8 +3296,8 @@ div.zpost.post_row:last-of-type {
   display: block;
   margin: 3px 0 0;
   padding: 0;
-  color: var(--);
-  font: var(--);
+  
+  
 }
 
 .zpost .post_rank:empty {
@@ -3358,13 +3357,13 @@ div.zpost.post_row:last-of-type {
   overflow: auto;
   border: 0;
   border-radius: 0;
-  background: var(--);
-   color: var(--);
-  font: var(--);
+  
+   
+  
   text-align: left;
   overflow-wrap: anywhere;
   scrollbar-width: thin;
-  scrollbar-color: var(--);
+  
 }
 
 .zpost .zpost-player {
@@ -3382,14 +3381,14 @@ div.zpost.post_row:last-of-type {
   display: inline;
   margin: 0;
   padding: 0;
-   color: var(--) !important;
-  font: var(--);
+   
+  
   text-transform: uppercase;
 }
 
 .zpost .zpost-value {
-  color: var(--);
-  font: var(--);
+  
+  
 }
 
 .zpost .zpost-value a {
@@ -3415,7 +3414,7 @@ div.zpost.post_row:last-of-type {
   overflow: hidden;
   border: 0;
   border-radius: 0;
-  background: var(--);
+  
 }
 
 .zpost .zpost-photo .zpost-label {
@@ -3455,7 +3454,7 @@ div.zpost.post_row:last-of-type {
   margin: 4px 0 0;
   padding: 0;
   overflow: auto;
-  font: var(--);
+  
 }
 
 .zpost .zpost-rpg:empty {
@@ -3476,9 +3475,9 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-left: 1px solid #111;
   border-radius: 0;
-  background: var(--);
-   color: var(--);
-  font-size: var(--);
+  
+   
+  
   line-height: 1.65;
   overflow-wrap: anywhere;
 }
@@ -3515,9 +3514,9 @@ div.zpost.post_row:last-of-type {
   min-height: 24px;
   padding: 4px 10px;
   border: 0;
-  border-left: 1px solid var(--);
+  
   border-radius: 0;
-  background: var(--);
+  
 }
 
 .zpost > .zpost-contact::before,
@@ -3530,15 +3529,15 @@ div.zpost.post_row:last-of-type {
   flex: 0 1 auto;
   min-width: 0;
   margin: 0;
-   color: var(--);
-  font: var(--);
+   
+  
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .zpost .zpost-contact a:hover {
-  color: var(--);
+  
 }
 
 .zpost .zpost-pm {
@@ -3565,8 +3564,8 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: var(--);
-  font: var(--);
+  
+  
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -3629,7 +3628,7 @@ ul.profile-icons li {
 
 /*hover d'un bouton d'édition*/
 ul.profile-icons li:hover {
-  background: var(--neutralDark);
+  
 }
 
 /* BOUTON LIKE --- */
@@ -3645,17 +3644,17 @@ ul.profile-icons li:hover {
 .rep-button,
 .rep-button:active,
 .rep-button:focus {
-  background: var(--neutralDark);
-  color: var(--textColor);
+  
+  
   border: none;
   padding: 3px 5px;
   border-radius: 5px;
-  font-weight: var(--);
+  
 }
 
 /*Bouton au survol*/
 .rep-button:hover {
-  background: var(--contrastLighter);
+  
 }
 
 /* Texte "j'aime" */
@@ -3664,7 +3663,7 @@ ul.profile-icons li:hover {
 button.rep-button .rep-nb {
   margin-left: 5px;
   padding: 0 3px;
-  background: var(--neutral);
+  
   border-radius: 3px;
 }
 
@@ -3681,7 +3680,7 @@ a.fa-mention {
 .presence.online {
   display: inline-block;
   position: relative;
-  background-color: var(--neutralDarker);
+  
   border-radius: 5px;
   padding: 0 5px;
   margin: 0 auto;
@@ -3700,7 +3699,7 @@ a.fa-mention {
   width: 40px;
   height: 40px;
   position: relative;
-  background-image: var(--award-image);
+  
   background-size: cover;
   background-position: center;
   border-radius: 100%;
@@ -3718,17 +3717,17 @@ a.fa-mention {
   position: absolute;
   top: 25%;
   left: 25px;
-  background-color: var(--neutral);
-  border: 1px solid var(--neutralDark);
+  
+  
   padding: 5px;
   border-radius: 5px;
   text-align: center;
-  font-size: var(--);
+  
 }
 
 /* titre de la récompenses*/
 .award_tooltiptext_title {
-  font-weight: var(--);
+  
 }
 
 .online:empty {
@@ -3750,14 +3749,14 @@ a.fa-mention {
 /*** SONDAGE ----------------------- ***/
 
 .poll {
-  background: var(--neutral);
+  
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .head_poll {
   padding: 10px;
-  border-bottom: 1px solid var(--neutralDark);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3770,7 +3769,7 @@ a.fa-mention {
 
 .poll_option {
   padding: 10px 20px 0 10px;
-  border-right: 1px solid var(--neutralDark);
+  
   text-align: right;
 }
 
@@ -3783,7 +3782,7 @@ a.fa-mention {
 .poll_send {
   margin-left: 220px;
   padding: 20px 10px 20px 20px;
-  border-left: 1px solid var(--neutralDark);
+  
 }
 
 .poll_vote:nth-child(2),
@@ -3813,15 +3812,15 @@ a.fa-mention {
 
 /* Contenu code, spoiler et hide*/
 .codebox dd {
-  background: var(--neutralDark);
+  
   border-radius: 5px;
   padding: 5px;
 }
 
 /* Nom de balise "code, spoiler" */
 .codebox dt {
-  font-weight: var(--);
-  font-size: var(--little-size);
+  
+  
 }
 
 /*retire la mention "code" du bloc*/
@@ -3832,8 +3831,8 @@ a.fa-mention {
 
 /* bouton "copier" */
 .copyCode {
-  font-size: var(--);
-  font-weight: var(--);
+  
+  
   position: absolute;
   top: 5px;
   right: 13px;
@@ -3867,7 +3866,7 @@ blockquote div {
 blockquote cite {
   display: block;
   margin-left: -20px;
-  font-style: var(--);
+  
 }
 
 /* Citation pseudo */
@@ -3888,7 +3887,7 @@ blockquote cite a {
 /*** PAGE DE PROFIL ---------------- ***/
 
 .user_profile {
-  background: var(--neutral);
+  
   border-radius: 5px;
   display: grid;
   grid-template-columns: max-content auto;
@@ -3920,8 +3919,8 @@ blockquote cite a {
 
 .profile_field label,
 .profile_field label>span {
-  font-weight: var(--);
-  color: var(--link);
+  
+  
 }
 
 .profile_field field {
@@ -3935,18 +3934,18 @@ blockquote cite a {
 
 /* Bouton "suivre le membre" */
 .followBtn {
-  background: var(--neutral);
-  border: 1px solid var(--neutralDark);
+  
+  
   border-radius: 5px;
-  font-weight: var(--);
+  
   margin: 0;
-  font-size: var(--);
+  
 }
 
 .followBtn::before {
   top: 1px;
   position: relative;
-  color: var(--accentClr);
+  
   margin-right: 5px;
 }
 
@@ -3980,7 +3979,7 @@ blockquote cite a {
   width: 100%;
   height: 100%;
   transition: 0.2s opacity ease;
-  background: var(--neutral);
+  
 }
 
 /* effet de transition du fond atténué */
@@ -4000,7 +3999,7 @@ blockquote cite a {
   opacity: 0;
   width: 90%;
   max-width: 800px;
-  box-shadow: var(--shadowBox);
+  
   border-radius: 10px;
   height: max-content;
   transform: translateX(-20%);
@@ -4038,7 +4037,7 @@ blockquote cite a {
 
 .preview_pseudo,
 .preview_pseudo strong {
-  font-size: var(--medium-size);
+  
 }
 
 .preview_contacts {
@@ -4071,7 +4070,7 @@ blockquote cite a {
   grid-template-columns: 95px auto;
   grid-gap: 10px;
   padding: 10px;
-  background: var(--neutral);
+  
   border-radius: 5px;
 }
 
@@ -4083,7 +4082,7 @@ blockquote cite a {
 }
 
 .userlist_pseudo {
-  font-size: var(--medium-size);
+  
 }
 
 /****** ------------------------------------------------------------------------------
@@ -4108,7 +4107,7 @@ blockquote cite a {
 
 /* Affichage d'un MP dans la liste */
 .mp_row {
-  background: var(--neutral);
+  
   border-radius: 5px;
   display: grid;
   grid-template-columns: 55px auto;
@@ -4122,7 +4121,7 @@ blockquote cite a {
 /*** AFFICHAGE D'UN MESSAGE PRIVÉ -- ***/
 
 .message {
-  background: var(--neutral);
+  
   border-radius: 5px;
   display: grid;
   grid-template-rows: max-content auto;
@@ -4131,7 +4130,7 @@ blockquote cite a {
 
 .message_infos {
   grid-column: 1 / span 2;
-  border-bottom: 1px solid var(--neutralDark);
+  
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -4144,7 +4143,7 @@ blockquote cite a {
 
 .message_profil {
   padding: 10px;
-  border-right: 1px solid var(--neutralDark);
+  
   text-align: center;
 }
 
@@ -4168,9 +4167,9 @@ blockquote cite a {
 
 /* Prévisualisation d'un message */
 #preview {
-  background: var(--neutral);
+  
   padding: 10px;
-  border: var(--border);
+  
   border-radius: 5px;
 }
 
@@ -4192,16 +4191,16 @@ blockquote cite a {
 
 /* Onglet selectionné */
 #tabs li.activetab {
-  background: var(--neutralDark);
-  border: var(--border);
+  
+  
   border-radius: 5px;
 }
 
 /* onglet au survol */
 #tabs li:hover {
-  background: var(--neutralDark);
+  
   border-radius: 5px;
-  border: var(--border);
+  
 }
 
 /* Suppression de l'onglet "amis et ignorés" */
@@ -4215,7 +4214,7 @@ div#tabs li:nth-child(5) {
 }
 
 .profil_preferences .italic {
-  font-size: var(--little-size);
+  
 }
 
 /* EDITER SIGNATURE ---*/
@@ -4253,7 +4252,7 @@ div#tabs li:nth-child(5) {
   grid-template-columns: 200px auto;
   border-radius: 5px;
   margin: 10px 0;
-  background: var(--neutral);
+  
 }
 
 .post_search>div {
@@ -4262,8 +4261,8 @@ div#tabs li:nth-child(5) {
 
 /* Colonne d'information du message */
 .postsearch_infos {
-  border-right: var(--border);
-  font-size: var(--little-size);
+  
+  
 }
 
 /* RECHERCHE DE SUJET -----*/
@@ -4289,9 +4288,9 @@ form[name="form_login"] .content {
 
 /* Fenêtre popup "recherche" */
 .overview {
-  background: var(--neutral);
+  
   border-radius: 5px;
-  border: var(--border);
+  
   padding: 10px;
   position: fixed !important;
   top: 50% !important;
@@ -4321,21 +4320,21 @@ form[name="form_login"] .content {
   margin-left: -225px;
   top: 50%;
   margin-top: -125px;
-  background-color: var(--neutral);
+  
   padding: 10px;
-  border: var(--border);
+  
   border-radius: 5px;
 }
 
 /* BOUTON MENTION PROFIL */
 /* style par défaut */
 a.fa-mention {
-  color: var(--);
+  
 }
 
 /* style au survol */
 a.fa-mention:hover {
-   color: var(--);
+   
 }
 
 /* MESSENGER LIGHT */
