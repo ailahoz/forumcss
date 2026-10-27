@@ -46,12 +46,11 @@
 }
 
 .blog_daymonth {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: var(--);
 }
 
 .blog_year {
-    font-size: 18px;
+    font-size: var(--);
 }
 
 .bloglist_infos {
@@ -323,7 +322,7 @@ background-attachment: fixed;
 .color-scheme-toggle {
   background-color: var(--neutralDark);
   padding: 5px 8px;
-  font-size: 36px;
+  font-size: var(--);
   text-align: center;
   border-radius: 5px;
   color: var(--textColor);
@@ -377,7 +376,7 @@ h2,
 .h2 {
   margin: 0;
   font-size: var(--large-size);
-  font-weight: 700;
+  font-weight: var(--);
 }
 
 /* Utilisé pour des titres de sous-sections, petit encadré, ...*/
@@ -387,7 +386,7 @@ h3,
   padding-bottom: 10px;
   margin: 0;
   font-size: var(--medium-size);
-  font-weight: bold;
+  font-weight: var(--);
 }
 
 /*** --------------------------------------- ***/
@@ -504,7 +503,7 @@ form#quick_reply {
 
 /*survol des liens uniques des pages*/
 .pagination span a:hover {
-  font-weight: 600;
+  font-weight: var(--);
 }
 
 /*lien actif : page sur laquelle vous vous trouvez */
@@ -637,8 +636,8 @@ a.specials_links:empty {
     width: 25px;
     display: grid;
     place-items: center;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: var(--);
+    font-size: var(--);
     scale: 1;
     bottom: 4px;
     opacity: 1;
@@ -703,7 +702,7 @@ a.specials_links:empty {
 /* Conteneur des notifications VIDE */
 .no_notification {
   text-align: center;
-  font-style: italic;
+  font-style: var(--);
 }
 
 /* Conteneur du footer du menu
@@ -799,7 +798,7 @@ a.specials_links:empty {
   display: grid;
   place-items: center;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: var(--);
 }
 
 /* Icone lorsque la notification est non lue */
@@ -824,7 +823,7 @@ a.specials_links:empty {
 .notif_close {
   background: transparent;
   align-self: start;
-  font-size: 18px;
+  font-size: var(--);
   line-height: 0;
   opacity: 0;
   border-radius: 100px;
@@ -862,7 +861,7 @@ a.specials_links:empty {
 
 .alert_close {
   background: var(--neutral);
-  font-size: 18px;
+  font-size: var(--);
   line-height: 0;
   border-radius: 100px;
   aspect-ratio: 1;
@@ -954,7 +953,7 @@ a.specials_links:empty {
 
 /* icon plus */
 .switcheroo__squircle--button i {
-  font-size: 19px;
+  font-size: var(--);
 }
 
 .switcheroo__squircle--button:hover {
@@ -1043,7 +1042,7 @@ a.specials_links:empty {
   width: 100%;
   height: 100%;
   transition: 0.2s opacity ease;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--);
 }
 
 /* Boîte de connexion */
@@ -1074,9 +1073,9 @@ a.specials_links:empty {
 /* Nom du champ */
 .switcheroo__form-label {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: var(--);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: var(--);
 }
 
 /* Zone de texte */
@@ -1097,12 +1096,12 @@ a.specials_links:empty {
   outline: none;
   box-shadow: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: var(--);
   align-self: center;
   background-color: var(--accentClr);
   cursor: pointer;
   color: var(--neutral);
-  font-weight: 600;
+  font-weight: var(--);
   margin-top: 10px;
 }
 
@@ -1117,7 +1116,7 @@ a.specials_links:empty {
 
 /* Fermer la boîte de connexion */
 .monomer-close {
-  font-size: 16px;
+  font-size: var(--);
   line-height: 12px;
   width: 18px;
   height: 18px;
@@ -1154,7 +1153,7 @@ a.specials_links:empty {
     padding-right: 160px;
   padding: 5px;
 
-  background: rgba(85, 79, 77, 0.85);
+  background-color: var(--);
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
 
@@ -1227,7 +1226,7 @@ a.mainmenu img {
 .bandeau_gauche h1 {
     text-align: center;
     font: 20px var(--font);
-    font-weight: bold;
+    font-weight: var(--);
     color: #fff;
     margin: 0px 0 5px 0;
 }
@@ -1245,9 +1244,9 @@ a.mainmenu img {
     margin-right: 5px;
     color: #fff;
     font-family: var(--font);
-    font-size: 12px;
+    font-size: var(--);
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--);
     letter-spacing: 0.4px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1279,10 +1278,11 @@ img.image_right {
 .hl_bandeau_right h1 {
     align-self: center;
     text-transform: lowercase;
-    font: 20px var(--font7);
+    font: var(--font7);
+  font-size: var(--);
     text-align: center;
-    font-style: italic;
-    color: #fff;
+    font-style: var(--);
+    color: var(--);
     margin: 0px 0 5px 0;
 }
 
@@ -1293,13 +1293,13 @@ img.image_right {
     margin-right: 5px;
     color: #fff;
     font-family: var(--font);
-    font-size: 12px;
+    font-size: var(--);
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--);
     letter-spacing: 0.4px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #000;
+    background-color: var(--);
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
@@ -1376,7 +1376,7 @@ img.image_right {
 
     background: var(--neutral);
     border: 1px solid var(--neutralDark);
-    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+    box-shadow: 0 8px 25px var(--);
 }
 
 .hv-profil-menu[hidden] {
@@ -1412,7 +1412,7 @@ img.image_right {
     border-bottom: 2px solid var(--neutralDark);
 
     font-family: var(--font3);
-    font-size: 19px;
+    font-size: var(--);
     line-height: 1.3;
     color: var(--contrast);
     text-decoration: none;
@@ -1536,8 +1536,8 @@ img.image_right {
   margin: 0;
   padding: 0;
     font-family: var(--font3);
-  font-size: 85px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1;
   letter-spacing: -0.05em;
   white-space: nowrap;
@@ -1560,7 +1560,7 @@ img.image_right {
   align-items: flex-start;
   padding: 0 15%;
   gap: 30%;
-  font-size:12px !important;
+  font-size: var(--) !important;
 }
 
 p.pa-intro-right-text {
@@ -1606,8 +1606,8 @@ label.pa-tab-label {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
     font-family: var(--font3);
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1;
   cursor: pointer;
   margin-bottom: 0;
@@ -1639,8 +1639,8 @@ label.pa-tab-label {
   margin: 0 0 16px;
   padding: 0;
     font-family: var(--font3);
-  font-size: 22px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.1;
   text-align: left;
   text-transform: lowercase;
@@ -1651,8 +1651,8 @@ label.pa-tab-label {
 .pa-panel-text {
   margin: 0;
     font-family: var(--font2);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.5;
   text-align: left;
    color: var(--);
@@ -1667,8 +1667,8 @@ label.pa-tab-label {
   width: 100%;
   margin-top: 20px;
     font-family: var(--font2);
-  font-size: 11px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1;
   text-transform: lowercase;
   text-decoration: none;
@@ -1705,9 +1705,9 @@ label.pa-tab-label {
 }
 
 .pa-panel-links a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  font-family: var(--);
+  font-size: var(--);
+  font-weight: var(--);
 }
 
 /* PA TAB END */
@@ -1796,8 +1796,8 @@ label.pa-tab-label {
   padding: 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 24px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1;
 }
 
@@ -1846,10 +1846,10 @@ label.pa-tab-label {
   justify-content: center;
   box-sizing: border-box;
   padding: 5px;
-  background: rgba(0, 0, 0, .6);
+  background-color: var(--);
    color: var(--);
-  font-size: 12px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   text-align: center;
   opacity: 0;
   transition: opacity .3s ease;
@@ -1899,7 +1899,7 @@ label.pa-tab-label {
 .topicslist-container {
   background: var(--);
    color: var(--);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--);
 }
 
 .category,
@@ -1967,7 +1967,7 @@ label.pa-tab-label {
 .forums {
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
+  border: 1px solid var(--);
 }
 
 /* FORUMS STRUCTURE */
@@ -1985,7 +1985,7 @@ label.pa-tab-label {
 }
 
 .forum + .forum {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--);
 }
 
 /* TITRE VERTICAL */
@@ -1999,10 +1999,10 @@ label.pa-tab-label {
   width: 45px;
   min-width: 0;
   padding: 10px 7px;
-  border-right: 1px solid #000;
+  border-right: 1px solid var(--);
   color: var(--);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.1;
   text-transform: uppercase;
   writing-mode: vertical-rl;
@@ -2062,8 +2062,8 @@ label.pa-tab-label {
   padding: 0;
   float: none;
   color: var(--);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -2080,7 +2080,7 @@ label.pa-tab-label {
   padding: 0 10px 0 0;
   align-self: stretch;
   overflow: hidden auto;
-  font-size: 13px;
+  font-size: var(--);
   line-height: 1.25;
   text-transform: lowercase;
   overflow-wrap: anywhere;
@@ -2156,7 +2156,7 @@ label.pa-tab-label {
   margin: 0;
   padding: 0;
   color: var(--);
-  font-size: 12px;
+  font-size: var(--);
   line-height: 1.5;
   text-align: center;
   text-transform: lowercase;
@@ -2166,8 +2166,8 @@ label.pa-tab-label {
 .forum_lastpost .lastpost_link {
   display: inline-block;
   color: var(--);
-  font-size: 13px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.1;
 }
 
@@ -2181,7 +2181,7 @@ label.pa-tab-label {
   min-height: 70px;
   margin: 0;
   padding: 10px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--);
 }
 
 .forum_details:not(:has(.forum_subforums a)) {
@@ -2200,8 +2200,8 @@ label.pa-tab-label {
   gap: 0;
   width: 100%;
   max-height: 84px;
-  font-size: 0;
-  line-height: 0;
+  font-size: var(--);
+  
 }
 
 .forum_subforums:not(:has(a)) {
@@ -2215,8 +2215,8 @@ label.pa-tab-label {
   min-width: 0;
   padding: 0;
    color: var(--);
-  font-size: 15px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 23px;
   text-align: left;
   text-transform: uppercase;
@@ -2256,7 +2256,7 @@ label.pa-tab-label {
   margin: 0;
   padding: 12px 15px;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--);
   border-radius: 0;
   background: var(--);
 }
@@ -2323,8 +2323,8 @@ label.pa-tab-label {
 
 .topicslist-container a.topictitle {
   color: var(--);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
   text-transform: lowercase;
   overflow-wrap: anywhere;
@@ -2334,8 +2334,8 @@ label.pa-tab-label {
 
 .topicslist-container .topic-type {
   color: var(--);
-  font-size: 9px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   text-transform: uppercase;
 }
 
@@ -2353,8 +2353,8 @@ label.pa-tab-label {
   gap: 8px;
   margin: 0;
   color: var(--);
-  font-size: 11px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
   text-transform: lowercase;
 }
@@ -2376,8 +2376,8 @@ label.pa-tab-label {
 .topicslist-container .topic-participated:has(img)::after {
   content: "//";
   color: var(--);
-  font-size: 12px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
 }
 
 /* DESCRIPTION SOUS FORUM */
@@ -2390,8 +2390,8 @@ label.pa-tab-label {
   border: none;
   background: transparent;
    color: var(--);
-  font-size: 11px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.35;
   overflow-wrap: anywhere;
 }
@@ -2403,7 +2403,7 @@ label.pa-tab-label {
   margin: 5px 0 0;
   padding: 0;
   color: var(--);
-  font-size: 11px;
+  font-size: var(--);
   line-height: 1.4;
 }
 
@@ -2431,8 +2431,8 @@ label.pa-tab-label {
   padding: 0;
   border: none;
    color: var(--);
-  font-size: 10px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.3;
   text-align: right;
   text-transform: none;
@@ -2467,20 +2467,20 @@ label.pa-tab-label {
 
 .topicslist-container .topicslist-last-author {
    color: var(--);
-  font-size: 12px;
-  font-weight: 600;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
   text-transform: lowercase;
 }
 
 .topicslist-container .topicslist-last-author strong {
-  font-weight: 600;
+  font-weight: var(--);
 }
 
 .topicslist-container .topicslist-last-date {
   margin-top: 4px;
  color: var(--);
-  font-size: 9px;
+  font-size: var(--);
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -2499,7 +2499,7 @@ label.pa-tab-label {
 .topicslist-empty {
   padding: 25px;
  color: var(--);
-  font-size: 12px;
+  font-size: var(--);
   text-align: center;
 }
 
@@ -2527,8 +2527,8 @@ label.pa-tab-label {
   border-radius: 0;
   background: var(--);
   color: var(--);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-family: var(--);
+  font-size: var(--);
   line-height: 1.5;
 }
 
@@ -2579,16 +2579,16 @@ label.pa-tab-label {
 }
 
 .qeel .qeel-welcome {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
+  font-family: var(--);
+  font-size: var(--);
   line-height: 1.2;
 }
 
 .qeel .qeel-newest-link {
   max-width: 100%;
   overflow-wrap: anywhere;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: var(--);
+  font-weight: var(--);
   text-transform: uppercase;
 }
 
@@ -2680,8 +2680,8 @@ label.pa-tab-label {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
    color: var(--);
-  font-size: 29px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
@@ -2730,9 +2730,9 @@ label.pa-tab-label {
 
 .qeel .qeel-panel-title {
   margin: 0 0 15px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-  font-weight: 400;
+  font-family: var(--);
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
 }
 
@@ -2741,7 +2741,7 @@ label.pa-tab-label {
 .qeel #total_users {
   margin-bottom: 12px;
    color: var(--);
-  font-size: 11px;
+  font-size: var(--);
   line-height: 1.4;
   text-transform: lowercase;
 }
@@ -2749,14 +2749,14 @@ label.pa-tab-label {
 .qeel #online_users,
 .qeel #last_connected {
   height: auto;
-  font-size: 12px;
+  font-size: var(--);
   line-height: 1.6;
   text-transform: lowercase;
 }
 
 .qeel #online_users a,
 .qeel #last_connected a {
-  font-weight: 700;
+  font-weight: var(--);
   text-transform: uppercase;
 }
 
@@ -2779,9 +2779,9 @@ label.pa-tab-label {
 .qeel .credits {
   margin-top: 15px;
   padding-top: 12px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--);
  color: var(--);
-  font-size: 10px;
+  font-size: var(--);
   line-height: 1.5;
 }
 
@@ -2845,8 +2845,8 @@ label.pa-tab-label {
   border-radius: 0;
   background: transparent;
   color: var(--);
-  font-size: 22px;
-  font-weight: 900;
+  font-size: var(--);
+  font-weight: var(--);
   line-height: 1.2;
   text-align: left;
   text-transform: uppercase;
@@ -3154,16 +3154,16 @@ div.zpost.post_row:last-of-type {
 
 .zpost .post_date > a {
   color: var(--);
-  font-size: 12px;
-  font-weight: 800;
+  font-size: var(--);
+  font-weight: var(--);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .zpost .post_date time {
   color: var(--);
-  font-size: 10px;
-  font-weight: 400;
+  font-size: var(--);
+  font-weight: var(--);
 }
 
 /* BOUTONS DU MESSAGE ET MENTION */
@@ -3193,7 +3193,7 @@ div.zpost.post_row:last-of-type {
 .zpost ul.profile-icons a,
 .zpost a.fa-mention {
    color: var(--);
-  font: 800 11px/1.4 Arial, sans-serif;
+  font: var(--);
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -3231,7 +3231,7 @@ div.zpost.post_row:last-of-type {
   background: transparent;
   box-shadow: none;
    color: var(--);
-  font: 800 11px/1.4 Arial, sans-serif;
+  font: var(--);
   white-space: nowrap;
   cursor: pointer;
 }
@@ -3280,7 +3280,7 @@ div.zpost.post_row:last-of-type {
   margin: 0;
   padding: 0;
    color: var(--);
-  font: 800 16px Arial, sans-serif;
+  font: var(--);
   text-align: left;
   text-transform: uppercase;
   overflow-wrap: anywhere;
@@ -3298,7 +3298,7 @@ div.zpost.post_row:last-of-type {
   margin: 3px 0 0;
   padding: 0;
   color: var(--);
-  font: 400 14px/1.3 Arial, sans-serif;
+  font: var(--);
 }
 
 .zpost .post_rank:empty {
@@ -3360,7 +3360,7 @@ div.zpost.post_row:last-of-type {
   border-radius: 0;
   background: var(--);
    color: var(--);
-  font: 400 12px/1.3 Arial, sans-serif;
+  font: var(--);
   text-align: left;
   overflow-wrap: anywhere;
   scrollbar-width: thin;
@@ -3383,13 +3383,13 @@ div.zpost.post_row:last-of-type {
   margin: 0;
   padding: 0;
    color: var(--) !important;
-  font: 600 12px/1.3 Arial, sans-serif;
+  font: var(--);
   text-transform: uppercase;
 }
 
 .zpost .zpost-value {
   color: var(--);
-  font: italic 400 12px/1.3 Arial, sans-serif;
+  font: var(--);
 }
 
 .zpost .zpost-value a {
@@ -3455,7 +3455,7 @@ div.zpost.post_row:last-of-type {
   margin: 4px 0 0;
   padding: 0;
   overflow: auto;
-  font: 400 12px/1.3 Arial, sans-serif;
+  font: var(--);
 }
 
 .zpost .zpost-rpg:empty {
@@ -3478,7 +3478,7 @@ div.zpost.post_row:last-of-type {
   border-radius: 0;
   background: var(--);
    color: var(--);
-  font-size: 14px;
+  font-size: var(--);
   line-height: 1.65;
   overflow-wrap: anywhere;
 }
@@ -3531,7 +3531,7 @@ div.zpost.post_row:last-of-type {
   min-width: 0;
   margin: 0;
    color: var(--);
-  font: 700 11px/1.4 Arial, sans-serif;
+  font: var(--);
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -3566,7 +3566,7 @@ div.zpost.post_row:last-of-type {
   border-radius: 0;
   background: transparent;
   color: var(--);
-  font: 700 11px/1.4 Arial, sans-serif;
+  font: var(--);
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -3650,7 +3650,7 @@ ul.profile-icons li:hover {
   border: none;
   padding: 3px 5px;
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: var(--);
 }
 
 /*Bouton au survol*/
@@ -3723,12 +3723,12 @@ a.fa-mention {
   padding: 5px;
   border-radius: 5px;
   text-align: center;
-  font-size: 11px;
+  font-size: var(--);
 }
 
 /* titre de la récompenses*/
 .award_tooltiptext_title {
-  font-weight: 600;
+  font-weight: var(--);
 }
 
 .online:empty {
@@ -3820,7 +3820,7 @@ a.fa-mention {
 
 /* Nom de balise "code, spoiler" */
 .codebox dt {
-  font-weight: 700;
+  font-weight: var(--);
   font-size: var(--little-size);
 }
 
@@ -3832,8 +3832,8 @@ a.fa-mention {
 
 /* bouton "copier" */
 .copyCode {
-  font-size: 12px;
-  font-weight: normal;
+  font-size: var(--);
+  font-weight: var(--);
   position: absolute;
   top: 5px;
   right: 13px;
@@ -3867,7 +3867,7 @@ blockquote div {
 blockquote cite {
   display: block;
   margin-left: -20px;
-  font-style: normal;
+  font-style: var(--);
 }
 
 /* Citation pseudo */
@@ -3920,7 +3920,7 @@ blockquote cite a {
 
 .profile_field label,
 .profile_field label>span {
-  font-weight: 600;
+  font-weight: var(--);
   color: var(--link);
 }
 
@@ -3938,9 +3938,9 @@ blockquote cite a {
   background: var(--neutral);
   border: 1px solid var(--neutralDark);
   border-radius: 5px;
-  font-weight: 600;
+  font-weight: var(--);
   margin: 0;
-  font-size: 14px;
+  font-size: var(--);
 }
 
 .followBtn::before {
