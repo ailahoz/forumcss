@@ -135,7 +135,7 @@
  *** Tutoriel pour utiliser les variables
  *** https://blankthemerpg.forumactif.com/t139-utiliser-les-variables-css ***/
 
-/* VARIABLE DU MODE DE BASE (ici clair) */
+@media not all { /* VARIABLE DU MODE DE BASE (ici clair) */
 :root {
   color-scheme: light;
   --header: url('');
@@ -194,6 +194,8 @@
   --border: 1px solid #2b2e3b;
 
   
+}
+
 }
 
 /* S'applique à TOUS les éléments du forum*/
