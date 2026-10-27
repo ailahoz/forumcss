@@ -622,7 +622,6 @@ a.specials_links:empty {
     right: 10px;
     gap: 10px;
     z-index: 999;
-    color: #fff;
 }
 
 /* Conteneur du nombre de notification non lues REMPLI */
@@ -1214,7 +1213,6 @@ a.mainmenu img {
   container-type: inline-size;
   margin: 0 auto;
   background: #fff;
-  color: #090909;
   font-family: var(--font2);
   }
 
@@ -1303,7 +1301,6 @@ a.mainmenu img {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #090909;
     font-family: var(--font3);
   font-size: 85px;
   font-weight: 900;
@@ -1378,14 +1375,13 @@ label.pa-tab-label {
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
-  color: #000;
   cursor: pointer;
   margin-bottom: 0;
 }
 
 /* titre de l'onglet actif */
 .pa-tab-input:checked + .pa-tab-label {
-  color: #d58b92;
+  color: var(--color2);
 }
 
 /* contenus fermés */
@@ -1414,7 +1410,7 @@ label.pa-tab-label {
   line-height: 1.1;
   text-align: left;
   text-transform: lowercase;
-  color: #000;
+  color: var(--);
 }
 
 /* texte du panel */
@@ -1425,7 +1421,7 @@ label.pa-tab-label {
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-  color: #000;
+   color: var(--);
 }
 
 /* lien lire la suite */
@@ -1442,7 +1438,7 @@ label.pa-tab-label {
   line-height: 1;
   text-transform: lowercase;
   text-decoration: none;
-  color: #000;
+   color: var(--);
 }
 
 /* bouton rond */
@@ -1453,17 +1449,17 @@ label.pa-tab-label {
   height: 12px;
   flex: 0 0 12px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--);
   transition: background-color 0.3s ease;
 }
 
 /* bouton au survol */
 .pa-read-more:hover::after {
-  background-color: #d58b92;
+  background-color: var(--);
 }
 
 .pa-read-more:hover {
-  color: #000;
+  color: var(--);
 }
 
 /* liens des annexes */
@@ -1617,7 +1613,7 @@ label.pa-tab-label {
   box-sizing: border-box;
   padding: 5px;
   background: rgba(0, 0, 0, .6);
-  color: #fff;
+   color: var(--);
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -1668,7 +1664,7 @@ label.pa-tab-label {
 .category,
 .topicslist-container {
   background: #fff;
-  color: #000;
+   color: var(--);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1701,7 +1697,7 @@ label.pa-tab-label {
 .forum_subforums a:hover,
 .topicslist-container a.topictitle:hover,
 .topicslist-pagination a:hover {
-  color: #d58b92;
+  color: var(--);
 }
 
 /* CATÉGORIES */
@@ -1724,7 +1720,7 @@ label.pa-tab-label {
 .cate_title h2 {
   margin: 0;
   padding: 20px 0 0;
-  color: #000;
+  color: var(--);
   font-size: 28px;
   font-weight: 700;
   line-height: 1.1;
@@ -1770,7 +1766,7 @@ label.pa-tab-label {
   min-width: 0;
   padding: 10px 7px;
   border-right: 1px solid #000;
-  color: #000;
+  color: var(--);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
@@ -1831,7 +1827,7 @@ label.pa-tab-label {
   margin: 0;
   padding: 0;
   float: none;
-  color: #000;
+  color: var(--);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -1925,7 +1921,7 @@ label.pa-tab-label {
   min-width: 0;
   margin: 0;
   padding: 0;
-  color: #777;
+  color: var(--);
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
@@ -1935,7 +1931,7 @@ label.pa-tab-label {
 
 .forum_lastpost .lastpost_link {
   display: inline-block;
-  color: #000;
+  color: var(--);
   font-size: 13px;
   font-weight: 900;
   line-height: 1.1;
@@ -1984,7 +1980,7 @@ label.pa-tab-label {
   width: 48%;
   min-width: 0;
   padding: 0;
-  color: #000;
+   color: var(--);
   font-size: 15px;
   font-weight: 900;
   line-height: 23px;
@@ -2092,7 +2088,7 @@ label.pa-tab-label {
 }
 
 .topicslist-container a.topictitle {
-  color: #000;
+  color: var(--);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.2;
@@ -2103,7 +2099,7 @@ label.pa-tab-label {
 /* TYPE DE SUJET */
 
 .topicslist-container .topic-type {
-  color: #000;
+  color: var(--);
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2122,7 +2118,7 @@ label.pa-tab-label {
   align-items: baseline;
   gap: 8px;
   margin: 0;
-  color: #777;
+  color: var(--);
   font-size: 11px;
   font-weight: 400;
   line-height: 1.2;
@@ -2134,7 +2130,7 @@ label.pa-tab-label {
 }
 
 .topic-author-separator {
-  color: #777;
+  color: var(--);
 }
 
 /* INDICATEUR DE PARTICIPATION */
@@ -2145,7 +2141,7 @@ label.pa-tab-label {
 
 .topicslist-container .topic-participated:has(img)::after {
   content: "//";
-  color: #000;
+  color: var(--);
   font-size: 12px;
   font-weight: 400;
 }
@@ -2159,7 +2155,7 @@ label.pa-tab-label {
   padding: 0;
   border: none;
   background: transparent;
-  color: #777;
+   color: var(--);
   font-size: 11px;
   font-weight: 400;
   line-height: 1.35;
@@ -2172,7 +2168,7 @@ label.pa-tab-label {
   display: block;
   margin: 5px 0 0;
   padding: 0;
-  color: #777;
+  color: var(--);
   font-size: 11px;
   line-height: 1.4;
 }
@@ -2184,7 +2180,7 @@ label.pa-tab-label {
 .topicslist-pagination a {
   display: inline-block;
   margin: 0 3px;
-  color: #000;
+  color: var(--);
 }
 
 /* STATISTIQUES SUR UNE LIGNE */
@@ -2200,7 +2196,7 @@ label.pa-tab-label {
   margin: 0;
   padding: 0;
   border: none;
-  color: #777;
+   color: var(--);
   font-size: 10px;
   font-weight: 400;
   line-height: 1.3;
@@ -2236,7 +2232,7 @@ label.pa-tab-label {
 }
 
 .topicslist-container .topicslist-last-author {
-  color: #000;
+   color: var(--);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -2249,7 +2245,7 @@ label.pa-tab-label {
 
 .topicslist-container .topicslist-last-date {
   margin-top: 4px;
-  color: #777;
+ color: var(--);
   font-size: 9px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -2268,7 +2264,7 @@ label.pa-tab-label {
 
 .topicslist-empty {
   padding: 25px;
-  color: #000;
+ color: var(--);
   font-size: 12px;
   text-align: center;
 }
@@ -2296,7 +2292,7 @@ label.pa-tab-label {
   border: 0;
   border-radius: 0;
   background: #fff;
-  color: #000;
+  color: var(--);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -2312,7 +2308,7 @@ label.pa-tab-label {
 }
 
 .qeel a:hover {
-  color: #d58b92;
+   color: var(--);
 }
 
 /* BIENVENUE + AVATAR DU DERNIER INSCRIT */
@@ -2449,7 +2445,7 @@ label.pa-tab-label {
   box-shadow: none;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  color: #000;
+   color: var(--);
   font-size: 29px;
   font-weight: 900;
   line-height: 1;
@@ -2460,7 +2456,7 @@ label.pa-tab-label {
 
 .qeel .qeel-tab-label:hover,
 .qeel .qeel-tab-input:checked + .qeel-tab-label {
-  color: #d58b92;
+  color: var(--);
 }
 
 .qeel .qeel-tab-input:checked + .qeel-tab-label {
@@ -2510,7 +2506,7 @@ label.pa-tab-label {
 
 .qeel #total_users {
   margin-bottom: 12px;
-  color: #777;
+   color: var(--);
   font-size: 11px;
   line-height: 1.4;
   text-transform: lowercase;
@@ -2550,7 +2546,7 @@ label.pa-tab-label {
   margin-top: 15px;
   padding-top: 12px;
   border-top: 1px solid #ddd;
-  color: #777;
+ color: var(--);
   font-size: 10px;
   line-height: 1.5;
 }
@@ -2614,7 +2610,7 @@ label.pa-tab-label {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #000;
+  color: var(--);
   font-size: 22px;
   font-weight: 900;
   line-height: 1.2;
@@ -2626,7 +2622,7 @@ label.pa-tab-label {
 }
 
 .qeel .qeel-groups a.groups:hover {
-  color: #d58b92;
+   color: var(--);
   opacity: 1;
 }
 
@@ -2889,8 +2885,8 @@ div.zpost.post_row:last-of-type {
   padding: 0;
   border: 1px solid #111;
   border-radius: 0;
-  background: #fff;
-  color: #111;
+  background: var(--);
+ color: var(--);
 }
 
 /* BANDEAU SUPÉRIEUR */
@@ -2909,7 +2905,7 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-radius: 0;
   background: #080808;
-  color: #fff;
+ color: var(--);
   font-size: 12px;
 }
 
@@ -2923,7 +2919,7 @@ div.zpost.post_row:last-of-type {
 }
 
 .zpost .post_date > a {
-  color: #fff;
+  color: var(--);
   font-size: 12px;
   font-weight: 800;
   text-decoration: none;
@@ -2931,7 +2927,7 @@ div.zpost.post_row:last-of-type {
 }
 
 .zpost .post_date time {
-  color: #fff;
+  color: var(--);
   font-size: 10px;
   font-weight: 400;
 }
@@ -2962,7 +2958,7 @@ div.zpost.post_row:last-of-type {
 
 .zpost ul.profile-icons a,
 .zpost a.fa-mention {
-  color: #fff;
+   color: var(--);
   font: 800 11px/1.4 Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -2972,7 +2968,7 @@ div.zpost.post_row:last-of-type {
 
 .zpost ul.profile-icons a:hover,
 .zpost a.fa-mention:hover {
-  color: #dfcc29;
+  color: var(--);
 }
 
 .zpost .profile-icons a[href=""] {
@@ -3000,14 +2996,14 @@ div.zpost.post_row:last-of-type {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  color: #fff;
+   color: var(--);
   font: 800 11px/1.4 Arial, sans-serif;
   white-space: nowrap;
   cursor: pointer;
 }
 
 .zpost button.rep-button:hover {
-  color: #dfcc29;
+  color: var(--);
 }
 
 .zpost button.rep-button .rep-nb {
@@ -3031,8 +3027,8 @@ div.zpost.post_row:last-of-type {
   padding: 16px 10px 0;
   border: 0;
   border-radius: 0;
-  background: #fff;
-  color: #111;
+  background: var(--);
+  color: var(--);
   text-align: left;
 }
 
@@ -3049,7 +3045,7 @@ div.zpost.post_row:last-of-type {
   display: block;
   margin: 0;
   padding: 0;
-  color: #111;
+   color: var(--);
   font: 800 16px Arial, sans-serif;
   text-align: left;
   text-transform: uppercase;
@@ -3067,7 +3063,7 @@ div.zpost.post_row:last-of-type {
   display: block;
   margin: 3px 0 0;
   padding: 0;
-  color: #666;
+  color: var(--);
   font: 400 14px/1.3 Arial, sans-serif;
 }
 
@@ -3129,12 +3125,12 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-radius: 0;
   background: #bdbdbb;
-  color: #111;
+   color: var(--);
   font: 400 12px/1.3 Arial, sans-serif;
   text-align: left;
   overflow-wrap: anywhere;
   scrollbar-width: thin;
-  scrollbar-color: #555 #bdbdbb;
+  scrollbar-color: var(--);
 }
 
 .zpost .zpost-player {
@@ -3152,13 +3148,13 @@ div.zpost.post_row:last-of-type {
   display: inline;
   margin: 0;
   padding: 0;
-  color: #111 !important;
+   color: var(--) !important;
   font: 600 12px/1.3 Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .zpost .zpost-value {
-  color: #111;
+  color: var(--);
   font: italic 400 12px/1.3 Arial, sans-serif;
 }
 
@@ -3246,8 +3242,8 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-left: 1px solid #111;
   border-radius: 0;
-  background: #fff;
-  color: #111;
+  background: var(--);
+   color: var(--);
   font-size: 14px;
   line-height: 1.65;
   overflow-wrap: anywhere;
@@ -3300,7 +3296,7 @@ div.zpost.post_row:last-of-type {
   flex: 0 1 auto;
   min-width: 0;
   margin: 0;
-  color: #111;
+   color: var(--);
   font: 700 11px/1.4 Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -3308,7 +3304,7 @@ div.zpost.post_row:last-of-type {
 }
 
 .zpost .zpost-contact a:hover {
-  color: #735500;
+  color: var(--);
 }
 
 .zpost .zpost-pm {
@@ -3335,7 +3331,7 @@ div.zpost.post_row:last-of-type {
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #111;
+  color: var(--);
   font: 700 11px/1.4 Arial, sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
@@ -4100,12 +4096,12 @@ form[name="form_login"] .content {
 /* BOUTON MENTION PROFIL */
 /* style par défaut */
 a.fa-mention {
-  color:#333;
+  color: var(--);
 }
 
 /* style au survol */
 a.fa-mention:hover {
-  color:#666;
+   color: var(--);
 }
 
 /* MESSENGER LIGHT */
