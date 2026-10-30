@@ -1243,15 +1243,12 @@ a.mainmenu img {
     align-items: center;
     padding: 4px 8px;
     margin-right: 5px;
-    color: #fff;
-    
     
     text-align: center;
     
     letter-spacing: 0.4px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #000;
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
@@ -1586,7 +1583,6 @@ p.pa-intro-right-text {
   align-items: stretch;
   flex: 0 0 40%;
   min-width: 0;
-  border: 1px solid #000;
   border-right: none;
 }
 
@@ -2240,11 +2236,6 @@ label.pa-tab-label {
   --forum-photo: url("https://i.pinimg.com/736x/12/24/da/1224da1e71c4fb8817565ce1fc2a9b3d.jpg");
 }
 
-/* LISTE DES SUJETS */
-
-.topicslist-container {
-  border: 1px solid #000;
-}
 
 /* STRUCTURE TOPICS LIST */
 
@@ -2491,7 +2482,6 @@ label.pa-tab-label {
 .topicslist-container .topic_separator {
   height: 12px;
   margin: 0;
-  border-bottom: 1px solid #000;
   
 }
 
@@ -2573,7 +2563,6 @@ label.pa-tab-label {
   gap: 10px;
   min-width: 0;
   padding: 15px 10px;
-  border: 1px solid #000;
   border-right: 0;
   border-radius: 0;
   text-align: center;
@@ -2832,7 +2821,6 @@ label.pa-tab-label {
   height: 240px;
   margin: 0;
   padding: 10px;
-  border: 1px solid #000;
   border-left: 0;
   border-radius: 0;
 }
