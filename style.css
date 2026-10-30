@@ -682,6 +682,7 @@ a.specials_links:empty {
   right: 0;
   visibility: visible;
   opacity: 1;
+  height:100%;
 }
 
 /* Conteneur des notifications */
