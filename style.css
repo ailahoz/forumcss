@@ -2776,69 +2776,67 @@ label.pa-tab-label {
   line-height: 1.5;
 }
 
-/* PHOTO + GROUPES */
+/* INFORMATIONS + GROUPES */
 
 .qeel > .qeel-groups-block {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
+  flex-direction: column;
   flex: 0 0 250px;
   width: 250px;
   height: 240px;
+  min-width: 0;
   margin: 0;
   padding: 0;
   gap: 0;
 }
 
-.qeel .qeel-group-photo {
-  flex: 0 0 100px;
-  width: 100px;
-  height: 240px;
-  overflow: hidden;
-  
+.qeel .qeel-infos {
+  flex: 1 1 0;
+  min-height: 0;
+  padding: 12px;
+  overflow: auto;
+  overflow-wrap: anywhere;
 }
 
-.qeel .qeel-group-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  max-height: none;
-  margin: 0;
-  border-radius: 0;
-  object-fit: cover;
-  object-position: center;
+.qeel .qeel-infos .qeel-panel-title {
+  margin-bottom: 10px;
+}
+
+.qeel .qeel-infos .qeel-stats {
+  margin-bottom: 10px;
+}
+
+.qeel .qeel-infos .credits {
+  margin-top: 10px;
+  padding-top: 8px;
 }
 
 .qeel .qeel-groups-block > .qeel-groups {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
-  flex: 1 1 0;
-  width: 150px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
   min-width: 0;
-  height: 240px;
   margin: 0;
-  padding: 10px;
-  border-left: 0;
+  padding: 12px;
+  gap: 10px 15px;
   border-radius: 0;
 }
 
 .qeel .qeel-groups a.groups {
   display: block;
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
-  
-  
-  
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   overflow-wrap: anywhere;
   opacity: 1;
@@ -2846,7 +2844,6 @@ label.pa-tab-label {
 }
 
 .qeel .qeel-groups a.groups:hover {
-   
   opacity: 1;
 }
 
