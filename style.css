@@ -4312,16 +4312,1790 @@ form[name="form_login"] .content {
   border-radius: 5px;
 }
 
+/******** DÉBUT TRANSFERT FA VERS GITHUB *********/
+
+
+/* BARRE SWITCHEROO --- */
+/* BARRE --- */
+.switcheroo {
+  color: var(--textcolor1);
+}
+
+/* AFFICHAGE DES COMPTES ---*/
+
+/* Rond */
+.switcheroo__squircle {
+  background-color: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+  transition: border-radius 128ms var(--ease);
+}
+
+/* Rond au survol */
+.switcheroo__squircle:hover {
+  outline-color: color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+}
+
+/* Image de l'avatar */
+.switcheroo__avatar img {
+  transition: border-radius 128ms var(--ease);
+}
+
+/* Avatar du compte connecté */
+.switcheroo__squircle.active,
+.switcheroo__squircle.active img {
+  outline-color: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+/* AJOUTER UN COMPTE ---*/
+/* button : ajouter un compte */
+.switcheroo__squircle--button {
+  transition: border-radius 128ms var(--ease);
+  color: var(--textcolor1);
+}
+
+/* icon plus */
+.switcheroo__squircle--button i {
+  font-size: var(--title-size);
+}
+
+.switcheroo__squircle--button:hover {
+  color: var(--textcolor2);
+}
+
+/* Bouton de suppression */
+.switcheroo__delete {
+  background-color: var(--textcolor2);
+  transition: transform 128ms var(--ease), opacity 64ms var(--ease);
+  color: var(--color5);
+}
+
+/* TOOLTIP - INFOBULLE DU PSEUDO ---*/
+
+/* Conteneur du pseudo */
+.switcheroo__popper {
+  background-color: color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+  color: var(--textcolor1);
+}
+
+/* Flèche tooltip */
+.switcheroo__popper:before {
+  background-color: color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+}
+
+/* MODAL : FENETRE DE CONNEXION --- */
+
+/* Fond de l'affichage de connexion */
+.monomer-overlay {
+  background: rgb(0 0 0 / 45%);
+}
+
+/* Boîte de connexion */
+.monomer-modal {
+  background: var(--color5);
+  box-shadow: var(--shadowBox);
+}
+
+/* Nom du champ */
+.switcheroo__form-label {
+  font-size: var(--little-size);
+  font-weight: var(--fontweight3);
+}
+
+/* Zone de texte */
+.switcheroo__form-input {
+  background-color: var(--color5);
+  color: var(--textcolor1);
+}
+
+/* Bouton de connexion */
+.switcheroo__form-button {
+  font-size: var(--normal-size);
+  background: var(--gradient1);
+  color: var(--textcolor1);
+  font-weight: var(--fontweight3);
+}
+
+.switcheroo__form-button:hover {
+  background: var(--gradient2);
+}
+
+/* Fermer la boîte de connexion */
+.monomer-close {
+  font-size: var(--title-size);
+  color: var(--textcolor1);
+  background: color-mix(in srgb, var(--textcolor1) 18%, var(--color5));
+}
+
+.monomer-close:hover {
+  background: var(--gradient1);
+}
+
+/*** ------------------------------- ***/
+/*** BARRE DE NAVIGATION ----------- ***/
+
+/* Conteneur de la barre de nav */
+.navbar {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  overflow: visible;
+  /*centre horizontalement*/
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+a.mainmenu,
+#notiffi_button {
+  font-family: var(--font2);
+  font-size: var(--little-size);
+  font-weight: 600;
+  color: var(--textcolor1);
+  text-transform: uppercase;
+}
+
+/* Lien navigation au survol*/
+a.mainmenu:hover {
+  color: var(--textcolor2);
+}
+
+#notiffi_button:hover {
+  color: var(--textcolor2);
+}
+
+/* bandeau */
+
+.hl_bandeau h1.pa-title {
+    border: none;
+}
+
+.hl_bandeau {
+  height: auto;
+min-height: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background: transparent;
+  font-family: var(--font2);
+}
+
+.hl_bandeau > .pa-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.hl_bandeau .pa-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0 0;
+}
+
+.hl_bandeau .pa-intro-left,
+.hl_bandeau .pa-intro-right {
+  position: static;
+  flex: 0 1 40%;
+  width: 40%;
+  min-width: 0;
+  margin: 0;
+}
+
+.hl_bandeau .pa-intro-left {
+  text-align: left;
+}
+
+.hl_bandeau .pa-intro-right {
+  text-align: right;
+}
+
+.hl_bandeau .pa-intro p {
+  margin: 0;
+}
+
+/* BANDEAU CITATION */
+
+.hl_bandeau .bandeau-citation {
+    max-width: 650px;
+    margin: 10px auto;
+    padding: 0 20px;
+    font-family: var(--font2);
+    font-size: var(--medium-size);
+    font-style: italic;
+    color: var(--textcolor1);
+    text-align: center;
+text-transform: lowercase;
+}
+
+/* DEUX BLOCS DE LIENS SOUS LES CITATIONS */
+
+.hl_bandeau .bandeau-bloc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin: 25px 0 0;
+  gap: 30px;
+}
+
+.hl_bandeau .bandeau-bloc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    transform: translateX(-50%);
+    background: var(--gradient3);
+}
+
+.hl_bandeau .bandeau-liens-left,
+.hl_bandeau .bandeau-liens-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 12px;
+}
+
+.hl_bandeau .bandeau-liens-left {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hl_bandeau .bandeau-liens-right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hl_bandeau .bandeau-liens-left a,
+.hl_bandeau .bandeau-liens-right a {
+  color: var(--textcolor1);
+  font-family: var(--font2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hl_bandeau .bandeau-liens-left a:hover,
+.hl_bandeau .bandeau-liens-right a:hover {
+  color: var(--textcolor2);
+}
+
+/* BOUTON */
+.hv-profil-btn {
+    color: var(--color1);
+}
+
+.hv-profil-btn:hover {
+    color: var(--color2);
+}
+
+/* PANNEAU */
+
+.hv-profil {
+  position: absolute;
+  right: 170px;
+  top: 0;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hv-profil-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  width: 520px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: transparent !important;
+  border: var(--border);
+  color: var(--textcolor1);
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.hv-profil-menu[hidden] {
+  display: none;
+}
+
+/* AVATAR */
+.hv-profil-avatar {
+  border: var(--border);
+}
+
+.hv-profil-liens a {
+  border: var(--border);
+  font-family: var(--font2);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+  color: var(--textcolor1);
+  text-transform: uppercase;
+}
+
+.hv-profil-liens a:hover {
+  color: var(--textcolor2);
+}
+
+/*** ------------------------------- ***/
+/*** ANNONCES DEFILANTES ----------- ***/
+
+/* Barre défilante */
+.module {
+  border: var(--border);
+}
+
+/****** ------------------------------------------------------------------------------
+ ****** PAGE PRINCIPALE, INDEX ------------------------------------------------------- ******/
+
+/* PAGE D'ACCUEIL ---*/
+
+.pa-home {
+/*  background: var(--color1);*/
+  font-family: var(--font2);
+}
+
+
+.pa-icons-top > div > a::after {
+    background: var(--gradient3);
+}
+
+.pa-home h1.pa-title {
+  font-family: var(--font5);
+  font-size: var(--pa-title-size);
+  font-weight: var(--fontweight3);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pa-home h1.pa-title {
+    border: none;
+}
+
+/* TXT INTRO */
+
+.pa-intro {
+  font-size: var(--normal-size) !important;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+/* titres verticaux */
+label.pa-tab-label {
+    font-family: var(--font2);
+  font-size: var(--label-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+}
+
+/* titre de l'onglet actif */
+.pa-tab-input:checked + .pa-tab-label {
+background-image: var(--gradient-text2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* titre du panel */
+.pa-panel-title {
+    font-family: var(--font2);
+  font-size: var(--large-size);
+  font-weight: var(--fontweight3);
+  color: var(--textcolor2);
+  text-transform: uppercase;
+}
+
+/* texte du panel */
+.pa-panel-text {
+    font-family: var(--font2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight2);
+text-transform: lowercase;
+  font-style:italic;
+}
+
+/* lien lire la suite */
+.pa-read-more {
+    font-family: var(--font2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight2);
+   color: var(--textcolor1);
+  text-transform:uppercase;
+}
+
+/* bouton rond */
+.pa-read-more::after {
+  background-color: var(--textcolor1);
+}
+
+/* bouton au survol */
+.pa-read-more:hover::after {
+  background-color: var(--textcolor2);
+}
+
+.pa-read-more:hover {
+  color: var(--textcolor1);
+}
+
+.pa-panel-links a {
+  font-family: var(--font2);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+}
+
+.pa-home .pa-staff-label {
+  font-size: var(--title-size);
+  font-weight: var(--fontweight3);
+  margin-right: 12px;
+  text-transform:uppercase;
+}
+
+.pa-home .pa-staff-name {
+  background-color: color-mix(in srgb, var(--color3) 60%, transparent);
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+  text-transform: lowercase;
+}
+
+/* FIN PAGE D'ACCUEIL ---*/
+
+/* BASE CATÉ */
+
+
+.category,
+.topicslist-container {
+  background:transparent;
+  font-family: var(--font2);
+}
+
+
+.forum > a.forumtitle:hover,
+.forum_lastpost .lastpost_link:hover,
+.forum_subforums a:hover,
+.topicslist-container a.topictitle:hover,
+.topicslist-pagination a:hover {
+  color: var(--textcolor2);
+}
+
+.cate_title {
+  border-bottom: none;
+}
+
+
+.cate_title h2 {
+  color: var(--textcolor1);
+  margin-right:10px;
+}
+
+/* LISTE DES FORUMS */
+
+.forums {
+  border: var(--border);
+  background: transparent;
+}
+
+/* FORUMS STRUCTURE */
+
+.forum {
+  background: transparent;
+}
+
+.forum + .forum {
+  border-top: var(--border);
+}
+
+/* TITRE VERTICAL */
+
+
+
+.forum > a.forumtitle {
+  color: var(--textcolor1);
+  font-size: var(--large-size);
+  font-weight: var(--fontweight3);
+  background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.18' filter='url(%23n)'/%3E%3C/svg%3E"),
+  var(--gradient3);
+background-size: 150px 150px, 100% 100%;
+background-repeat: repeat, no-repeat;
+}
+
+/* FORUM IMG */
+
+.forum_content::before {
+  background: var(--color3) var(--forum-photo, none) center / cover no-repeat;
+   border-left: var(--border);
+}
+
+/* STATS DESCRIPTION */
+
+.forum_stats {
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+
+  font-weight: var(--fontweight2);
+  text-transform: uppercase;
+}
+
+.forum_stats strong,
+.forum_stats b {
+  font-weight: inherit;
+}
+
+/* DESCRIPTION CATÉGORIE */
+
+.forum_desc {
+  font-size: var(--normal-size);
+}
+
+.forum_avatar {
+  background: var(--color3);
+}
+
+/* DERNIER SUJET, DATE ET AUTEUR FORUM */
+
+.forum_lastpost {
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+}
+
+.forum_lastpost .lastpost_link {
+  color: var(--textcolor1);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight3);
+}
+
+.last-post-icon img,
+.topicslist-last-date > a img {
+  display: none;
+}
+
+.last-post-icon::after,
+.topicslist-last-date > a::after {
+  content: "→";
+  color: var(--textcolor1);
+}
+
+.last-post-icon:hover::after,
+.topicslist-last-date > a:hover::after {
+  color: var(--textcolor2);
+}
+
+/* BANDE DU BAS */
+
+.forum_details {
+  border: var(--border);
+  border-bottom: none;
+  border-right: none;
+}
+
+/* LIENS DES SOUS-FORUMS */
+
+.forum_subforums {
+  font-size: 0;
+}
+
+.forum_subforums a {
+  color: var(--textcolor1);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight3);
+  margin-right: 8px;
+}
+
+.forum_lastpost a.gensmall {
+  text-transform: uppercase;
+  font-weight: var(--fontweight2);
+}
+
+/* STRUCTURE TOPICS LIST */
+
+.topicslist-container .topicslist_row {
+    border-bottom: var(--border);
+}
+
+.topicslist-container .topicslist-dot {
+  background: var(--color2);
+}
+
+.topicslist-container .topicslist_row.post_new .topicslist-dot {
+  background: var(--color4);
+}
+
+/* cici*/
+
+
+.topicslist-container a.topictitle {
+  color: var(--textcolor1);
+
+  font-size: var(--medium-size);
+
+  font-weight: var(--fontweight2);
+}
+
+.topicslist-container a.topictitle strong,
+.topicslist-container a.topictitle b {
+  font-weight: inherit;
+}
+
+/* TYPE DE SUJET */
+
+.topicslist-container .topic-type {
+  color: var(--textcolor2);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight3);
+}
+
+/* AUTEUR À CÔTÉ DU TITRE */
+
+.topicslist-container .topic-author {
+  color: var(--textcolor1);
+
+  font-size: var(--little-size);
+
+  font-weight: var(--fontweight2);
+  text-transform: uppercase;
+}
+
+.topic-author-separator {
+  color: var(--textcolor1);
+}
+
+.topicslist-container .topic-participated:has(img)::after {
+  color: var(--textcolor2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight3);
+}
+
+/* DESCRIPTION SOUS FORUM */
+
+.topicslist-container .topicslist-description {
+   color: var(--textcolor1);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight2);
+}
+
+/* PAGINATION DU SUJET */
+
+.topicslist-container .topicslist-pagination {
+  color: transparent;
+  font-size: var(--normal-size);
+}
+
+.topicslist-pagination a {
+  color: var(--textcolor1);
+}
+
+/* STATISTIQUES SUR UNE LIGNE */
+
+.topicslist-container .topicslist-stats {
+  color: var(--textcolor1);
+
+  font-size: var(--little-size);
+
+  font-weight: var(--fontweight2);
+  text-transform: uppercase;
+}
+
+.topicslist-container .topicslist-stats strong,
+.topicslist-container .topicslist-stats b {
+  font-weight: inherit;
+}
+
+/* AVATAR DU DERNIER POSTEUR */
+
+.topicslist-container .topicslist-avatar-lastpost {
+  background: transparent;
+}
+
+.topicslist-container .topicslist-last-author {
+  color: var(--textcolor1);
+
+  font-size: var(--little-size);
+
+  font-weight: var(--fontweight2);
+  text-transform: uppercase;
+}
+
+.topicslist-container .topicslist-last-author strong {
+  font-weight: inherit;
+}
+
+.topicslist-container .topicslist-last-date {
+  color: var(--textcolor1);
+
+  font-size: var(--little-size);
+  text-transform: lowercase;
+}
+
+/* SÉPARATION ANNONCES ET SUJETS */
+
+.topicslist-container .topic_separator {
+  background: var(--gradient1);
+}
+
+/* AUCUN SUJET */
+
+.topicslist-empty {
+ color: var(--textcolor1);
+  font-size: var(--normal-size);
+}
+
+.qeel {
+  background: transparent;
+  color: var(--textcolor1);
+  font-family: var(--font2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight2);
+}
+
+.qeel a:hover {
+  color: var(--textcolor2);
+}
+
+.qeel .qeel-welcome {
+  font-family: var(--font2);
+  font-size: var(--normal-size);
+    text-transform: lowercase;
+}
+
+.qeel .qeel-newest-link {
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight2);
+  text-transform: uppercase;
+}
+
+.qeel .qeel-newest-link strong {
+  font-weight: inherit;
+}
+
+.qeel #lastuser_avatar {
+  background: transparent;
+}
+
+/* Titres verticaux */
+
+.qeel .qeel-tab-label {
+ color:var(--textcolor1);
+  font-size: var(--label-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+}
+
+.qeel .qeel-tab-label:hover,
+.qeel .qeel-tab-input:checked + .qeel-tab-label {
+   background-image: var(--gradient-text2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.qeel .qeel-panel-title {
+  font-family: var(--font2);
+  font-size: var(--medium-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+}
+
+/* MEMBRES CONNECTÉS */
+
+.qeel #total_users {
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+  text-transform: lowercase;
+}
+
+.qeel #online_users,
+.qeel #last_connected {
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+  text-transform: lowercase;
+}
+
+.qeel #online_users a,
+.qeel #last_connected a {
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+}
+
+.qeel #total_users strong,
+.qeel #online_users strong,
+.qeel #last_connected strong {
+  font-weight: inherit;
+}
+
+.qeel .credits {
+  border-top: var(--border);
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+}
+
+
+.qeel .qeel-groups a.groups {
+  font-size: var(--large-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+}
+
+
+.qeel #newest_user {
+  border: var(--border);
+  border-right: none;
+}
+
+.qeel > .qeel-groups-block {
+  border: var(--border);
+}
+
+.qeel .qeel-infos {
+  background: transparent;
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+}
+
+.qeel .qeel-groups-block > .qeel-groups {
+  background: transparent;
+  border: none;
+  border-top: var(--border);
+}
+
+
+/* chaîne de lien de navigation : catégorie > forum > sous-fo */
+.navigation_chain {
+  /*retire les :: de séparation */
+}
+
+.navigation_chain a:before {
+  /*symbole ou texte modifiable*/
+  font-size: var(--normal-size);
+}
+
+/* BOUTONS DE MESSAGE : Répondre, Nouveau,... ---*
+ * (réutilisé dans l'affichage d'un sujet (viewtopic_body) et les MP (privmsgs_body) */
+.buttons {
+  display: inline-block;
+  padding: 5px 5px !important;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background: var(--gradient1);
+  color: var(--textcolor1);
+  font-family: var(--font2);
+  font-size: var(--normal-size);
+  font-weight: var(--fontweight3);
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.buttons:hover {
+  background: var(--gradient2);
+  color: var(--textcolor1);
+  opacity: 1;
+}
+
+#moderation_forum_tools a {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+  font-size: var(--normal-size);
+}
+
+/*** ------------------------------- ***/
+/*** LISTE DES SUJETS -------------- ***/
+
+/* Bloc de description du forum */
+.forum-page_desc {
+  background: var(--color5);
+}
+
+/* Conteneur sujet dans la liste */
+.topicslist_row {
+  background: var(--color5);
+}
+
+/* Image du sujet */
+.topicslist-img {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+/*titre du sujet*/
+.topictitle {
+  font-size: var(--medium-size);
+}
+
+.topicslist-avatar-lastpost img {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+.topicslist-description {
+  border-top: 1px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+/* ligne qui séparent les annonces et les notes des autres sujets (à activer dans "message > configuration") */
+.topic_separator {
+  background: var(--color5);
+}
+
+/* Bouton "trier les sujets" */
+#sort-topics {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+.sort-form {
+  background: var(--color5);
+  border: 1px solid color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+}
+
+/* Avatar du participant*/
+.poster {
+  background: var(--poster-avatar);
+  border: 2px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+.poster-more:hover .poster-more-list {
+  background: color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+}
+
+/* CADRE GÉNÉRAL EN FLEXBOX */
+
+div.zpost.post_row,
+div.zpost.post_row:nth-of-type(2),
+div.zpost.post_row:last-of-type {
+  border: var(--border);
+  background: transparent;
+  color: var(--textcolor1);
+}
+
+/* BANDEAU SUPÉRIEUR */
+
+.zpost > .post_details {
+  background: var(--gradient1);
+  color: var(--textcolor1);
+  border-bottom: var(--border);
+}
+
+.zpost .post_date > a {
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+}
+
+.zpost .post_date time {
+  color: var(--textcolor1);
+  font-size: var(--little-size);
+  font-weight: var(--fontweight2);
+  text-transform: lowercase;
+}
+
+.zpost ul.profile-icons a,
+.zpost a.fa-mention {
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+}
+
+.zpost ul.profile-icons a:hover,
+.zpost a.fa-mention:hover {
+  color: var(--textcolor2);
+}
+
+.zpost button.rep-button,
+.zpost button.rep-button:hover,
+.zpost button.rep-button:active,
+.zpost button.rep-button:focus {
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+}
+
+.zpost button.rep-button:hover {
+  color: var(--textcolor2);
+}
+
+/* COLONNE DU PROFIL */
+
+.zpost .zpost-identity {
+  background: var(--color5);
+  padding:5px;
+}
+
+.zpost > .zpost-profile {
+  color: var(--textcolor1);
+}
+
+.zpost .post_pseudo {
+  color: var(--textcolor1);
+  font: var(--fontweight3) var(--normal-size) var(--font2);
+  text-transform: uppercase;
+  text-align:center;
+}
+
+.zpost .post_rank {
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+  text-transform: lowercase;
+  font-style: italic;
+  text-align:center;
+}
+
+
+
+/* BLOCS INFOS */
+
+.zpost .zpost-fields {
+  background: var(--color5);
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+  scrollbar-color: var(--textcolor1) var(--color2);
+  border-left: 3px solid transparent;
+border-image: var(--gradient3) 1;
+  height:60px !important;
+
+}
+
+.zpost .zpost-label,
+.zpost .zpost-label * {
+  color: var(--textcolor1) !important;
+  font: var(--fontweight3) var(--little-size) var(--font2);
+  text-transform: uppercase;
+}
+
+.zpost .zpost-value {
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+}
+
+/* PHOTO SECONDAIRE : 200 × 90 PX */
+
+.zpost .zpost-photo {
+  background: var(--color3);
+}
+
+/* FEUILLE RPG */
+
+.zpost .zpost-rpg {
+  font: var(--fontweight2) var(--little-size) var(--font2);
+}
+
+/* CONTENU DU MESSAGE ET SÉPARATION VERTICALE */
+
+.zpost > .post_message {
+  background: transparent;
+  color: var(--textcolor1);
+  font-size: var(--normal-size);
+  border-left: var(--border);
+}
+
+/* LIENS EN BAS À DROITE */
+
+.zpost > .zpost-contact {
+  border-left: 1px solid var(--textcolor1);
+}
+
+.zpost .zpost-contact a {
+  color: var(--textcolor1);
+  font: var(--fontweight2) var(--little-size) var(--font2);
+}
+
+.zpost .zpost-contact a:hover {
+  color: var(--textcolor2);
+}
+
+.zpost .zpost-contact a,
+.zpost .zpost-contact > .zpost-status {
+    font-size: var(--extralittle-size);
+}
+
+/* STATUT TEXTE DANS LE PIED DU MESSAGE */
+
+.zpost .zpost-contact > .zpost-status {
+background: var(--gradient-text);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+  font: var(--fontweight3) var(--extralittle-size) var(--font2);
+}
+
+/*hover d'un bouton d'édition*/
+ul.profile-icons li:hover {
+  background: transparent;
+}
+
+/* Bouton like */
+.rep-button,
+.rep-button:active,
+.rep-button:focus {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+  color: var(--textcolor1);
+  font-weight: var(--fontweight3);
+}
+
+/*Bouton au survol*/
+.rep-button:hover {
+  background: color-mix(in srgb, var(--textcolor1) 18%, var(--color5));
+}
+
+/* Texte "j'aime" */
+
+/*compteur de like*/
+button.rep-button .rep-nb {
+  background: var(--color5);
+}
+
+.presence.online {
+  background-color: color-mix(in srgb, var(--textcolor1) 20%, var(--color5));
+}
+
+/* Récompense */
+.award {
+  background-image: var(--award-image);
+}
+
+/* Bloc description de la récompenses */
+.award_tooltiptext {
+  background-color: var(--color5);
+  border: 1px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+  font-size: var(--little-size);
+}
+
+/* titre de la récompenses*/
+.award_tooltiptext_title {
+  font-weight: var(--fontweight3);
+}
+
+
+/* ÉDITEUR DE MESSAGE */
+
+.sceditor-container {
+  background: transparent !important;
+  border: var(--border) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+.sceditor-container textarea,
+.sceditor-container iframe {
+  max-width: 100% !important;
+  height: 160px !important;
+  min-height: 160px !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.sceditor-toolbar {
+  background: transparent !important;
+  border-bottom: var(--border) !important;
+}
+
+.sceditor-container textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Retire le cadre de la réponse rapide pour les invités */
+
+/*** ------------------------------- ***/
+/*** SONDAGE ----------------------- ***/
+
+.poll {
+  background: var(--color5);
+}
+
+.head_poll {
+  border-bottom: 1px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+.poll_option {
+  border-right: 1px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+.poll_send {
+  border-left: 1px solid color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+/* Contenu code, spoiler et hide*/
+.codebox dd {
+  background: color-mix(in srgb, var(--textcolor1) 12%, var(--color5));
+}
+
+/* Nom de balise "code, spoiler" */
+.codebox dt {
+  font-weight: var(--fontweight3);
+  font-size: var(--little-size);
+}
+
+/* bouton "copier" */
+.copyCode {
+  font-size: var(--little-size);
+  font-weight: var(--fontweight3);
+}
+
+/* Citation mention "... a écrit" */
+blockquote cite {
+  font-style: italic;
+}
+
+/* Contour des citations */
+.postbody blockquote {
+  margin: 15px 0;
+  padding: 15px;
+  border: var(--border);
+  border-radius: 0;
+  background: transparent;
+}
+
+/* Hide flouté */
+.postbody .codebox.hidecode dd {
+  background: transparent;
+  opacity: 1;
+  filter: blur(5px);
+  transition: filter .25s ease;
+}
+
+/* Hide lisible au survol */
+.postbody .codebox.hidecode:hover dd,
+.postbody .codebox.hidecode:focus-within dd {
+  filter: blur(0);
+}
+
+/****** ------------------------------------------------------------------------------
+ ****** MEMBRES ------------------------------------------------------ ******/
+
+/*** ------------------------------- ***/
+/*** PAGE DE PROFIL ---------------- ***/
+
+.user_profile {
+  background: transparent;
+}
+
+.profile_field label,
+.profile_field label > span {
+  font-weight: var(--fontweight3);
+  color: var(--textcolor2);
+}
+
+/* Bouton "suivre le membre" */
+.followBtn {
+  background: transparent;
+  color: var(--textcolor1);
+  border: var(--border);
+  font-family: var(--font2);
+  font-weight: var(--fontweight3);
+  font-size: var(--little-size);
+}
+
+.followBtn:hover {
+  background: var(--gradient1);
+}
+
+.followBtn::before {
+  color: var(--textcolor2);
+}
+
+/*** ------------------------------- ***/
+/*** APERÇUS ET LISTE DES MEMBRES --- ***/
+
+.preview_pseudo,
+.preview_pseudo strong {
+  font-size: var(--medium-size);
+}
+
+.userlist_profil {
+  background: var(--color5);
+}
+
+.userlist_pseudo {
+  font-size: var(--medium-size);
+}
+
+/* Affichage d'un MP dans la liste */
+.mp_row {
+  background: var(--color5);
+}
+
+/*** ------------------------------- ***/
+/*** AFFICHAGE D'UN MESSAGE PRIVÉ -- ***/
+
+.message {
+  background: var(--color5);
+}
+
+.message_infos {
+  border-bottom: var(--border);
+}
+
+.message_profil {
+  border-right: var(--border);
+}
+
+/****** ------------------------------------------------------------------------------
+ ****** PAGES ANNEXES ---------------------------------------------------------- ******/
+
+/*** ------------------------------- ***/
+/*** PAGE D'ENVOI D'UN MESSAGE ----- ***/
+
+.message-edition {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  min-width: 0;
+  /*espace entre la zone de texte et la boîte à smileys*/
+}
+
+.message-edition > #smiley-box {
+  flex: 0 0 220px;
+  width: 220px;
+  min-width: 0;
+  float: none;
+  background: transparent;
+}
+
+.message-edition > #message-box {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  margin: 0 !important;
+}
+
+.message-edition #textarea_content {
+  width: 100% !important;
+  min-width: 0;
+}
+
+/* FOND INTÉRIEUR DE LA BOÎTE À SMILEYS */
+body#sce_smilies_body {
+  background: transparent !important;
+  background-image: none !important;
+  margin: 0 !important;
+}
+
+/* Prévisualisation d'un message */
+#preview {
+  background: var(--color5);
+  border: var(--border);
+}
+
+/* Onglet selectionné */
+#tabs li.activetab {
+  background: var(--gradient1);
+}
+
+/* onglet au survol */
+#tabs li:hover {
+  background: var(--gradient1);
+  border: var(--border);
+}
+
+.profil_preferences .italic {
+  font-size: var(--little-size);
+}
+
+/* EDITER SIGNATURE ---*/
+#parent_editor_simple > #smiley-box {
+  /* float: right; -- pour smileys à droite */
+}
+
+#parent_editor_simple #message-box {
+  /* margin-right: XXXpx -- pour smileys à droite */
+}
+
+/*** ------------------------------- ***/
+/*** PAGES DE RECHERCHES ----------- ***/
+
+/* RECHERCHE DE MESSAGE -----*/
+
+/* Conteneur d'un message*/
+.post_search {
+  background: var(--color5);
+}
+
+/* Colonne d'information du message */
+.postsearch_infos {
+  border-right: var(--border);
+  font-size: var(--little-size);
+}
+
+/*** ------------------------------- ***/
+/*** ELEMENTS FLOTTANTS ------------ ***/
+
+/* Fenêtre popup "recherche" */
+.overview {
+    background: color-mix(in srgb, var(--color5) 65%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--border);
+  border-radius: 0;
+}
+
+/* Boîte "recherche un utilisateur" */
+#find_username {
+  background-color: var(--color5);
+  border: var(--border);
+}
+
 /* BOUTON MENTION PROFIL */
 /* style par défaut */
 a.fa-mention {
-  
+  color: var(--textcolor1);
 }
 
 /* style au survol */
 a.fa-mention:hover {
-   
+   color: var(--textcolor2);
 }
+
+/* BANDEAU */
+
+.hl_bandeau_right a {
+   background: transparent;
+    color: var(--textcolor1);
+}
+
+/*PA INFO TABS*/
+  
+  .pa-info-tabs {
+  border: var(--border);
+    border-right: none;
+  }
+
+/* LISTE DES SUJETS */
+
+.topicslist-container {
+  border: var(--border);
+}
+
+.topicslist-container .topic_separator {
+  border-bottom: var(--border);
+  
+}
+
+/* rang post */
+
+.zpot .post_rank {
+  text-transform: lowercase;
+font-style: italic;
+}
+
+/* PAGE DE PROFIL */
+/* PAGE DE PROFIL */
+
+#wombat {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    padding: 25px;
+    background: transparent;
+    border: var(--border);
+    border-radius: 0;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+}
+
+#wombat,
+#wombat * {
+    box-sizing: border-box;
+}
+
+/* FOND TRANSPARENT ET FLOUTÉ */
+
+#wombat::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: color-mix(in srgb, var(--color5) 25%, transparent);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+/* STRUCTURE */
+
+#wombat .user_profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    background: transparent;
+    overflow: visible;
+}
+
+/* COLONNE GAUCHE */
+
+#wombat .profile_left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    width: 200px;
+    min-width: 0;
+}
+
+#wombat .profile_left > h1.page-title {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-family: var(--font2);
+    font-size: var(--large-size);
+    font-weight: var(--fontweight3);
+    line-height: 1.3;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#wombat .profile_rank {
+    margin: 4px 0 15px;
+    font-size: var(--little-size);
+    font-weight: var(--fontweight2);
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/* AVATAR */
+
+#wombat .profile_avatar {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#wombat .profile_avatar img {
+    display: block;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    object-position: top left;
+    border: none;
+    border-radius: 0;
+}
+
+/* PHOTO SECONDAIRE */
+
+#wombat .profile_images {
+    width: 100%;
+    margin-top: 12px;
+}
+
+#wombat .profile_images:empty {
+    display: none;
+}
+
+#wombat .profile_images .profile_field {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+#wombat .profile_images .profile_field > label {
+    display: none;
+}
+
+#wombat .profile_images field,
+#wombat .profile_images .field_uneditable {
+    display: block;
+    width: 100%;
+}
+
+#wombat .profile_images field img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* COLONNE DROITE */
+
+#wombat .profile_infos {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    font-size: var(--normal-size);
+    line-height: 1.5;
+
+    max-width: 100%;
+}
+
+/* STATUT */
+
+#wombat .profile_status {
+    margin: 0 0 12px;
+    font-size: var(--little-size);
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/* CONTACTS */
+
+#wombat .profile_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0 0 15px;
+    background: transparent;
+border-bottom: 3px solid transparent;
+border-image: var(--gradient1) 1;
+}
+
+#wombat .profile_contact > div {
+    width: auto;
+    margin: 0;
+}
+
+#wombat .profile_contact a img,
+#wombat .profile_mp a img {
+    display: none;
+}
+
+#wombat .profile_contact a,
+#wombat .profile_mp a,
+#wombat .profile_posts_links a {
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight3);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#wombat .profile_contact a:hover,
+#wombat .profile_mp a:hover,
+#wombat .profile_posts_links a:hover {
+    color: var(--textcolor2);
+}
+
+/* BLOCS D’INFORMATIONS */
+
+#wombat .profile_content {
+    display: flex;
+
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 18px 25px;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+#wombat .profile_content::before {
+    content: none;
+}
+
+#wombat .profile_content > .profile_field {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(50% - 12.5px);
+    gap: 5px;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 12px;
+    border: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--textcolor1) 15%, transparent);
+}
+
+#wombat .profile_field label,
+#wombat .profile_field label > span {
+    color: var(--textcolor2) !important;
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight3);
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+#wombat .profile_field field {
+    display: block;
+    min-width: 0;
+    font-size: var(--normal-size);
+    overflow-wrap: anywhere;
+
+    max-width: 100%;
+
+    white-space: normal;
+}
+
+#wombat .profile_content field img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+#wombat .profile_posts_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* MODÉRATION */
+
+#wombat .profile_admin {
+    display: flex;
+
+  /***** FIN TRANSFERT*****/
 
 /* MESSENGER LIGHT */
 :root {
