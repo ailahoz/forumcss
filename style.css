@@ -4944,7 +4944,7 @@ text-transform: lowercase;
 }
 
 .hv-profil-liens a {
-  border: var(--border);
+  border-bottom: var(--border);
   font-family: var(--font2);
   font-size: var(--little-size);
   font-weight: var(--fontweight2);
