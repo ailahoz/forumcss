@@ -4314,7 +4314,6 @@ form[name="form_login"] .content {
 
 /******** DÉBUT TRANSFERT FA VERS GITHUB *********/
 
-
 /* BARRE SWITCHEROO --- */
 /* BARRE --- */
 .switcheroo {
@@ -6094,6 +6093,584 @@ border-image: var(--gradient1) 1;
 
 #wombat .profile_admin {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#wombat .profile_admin a {
+    color: var(--textcolor1);
+    font-size: var(--little-size);
+    text-decoration: none;
+}
+
+#wombat .profile_admin a:hover {
+    color: var(--textcolor2);
+}
+
+/* BADGES DU PROFIL */
+
+#wombat .profile_badges {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#wombat .profile_badges_title {
+    margin-bottom: 10px;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight3);
+    text-transform: uppercase;
+}
+
+#wombat .profile_badges .awards_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    overflow: visible;
+}
+
+#wombat .profile_badges .award {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TEXTES LONGS ET LARGEUR DES BLOCS RP / IRL */
+
+#wombat .profile_section {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+#wombat .profile_section_fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    gap: 12px;
+}
+
+#wombat .profile_section_fields > .profile_field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    gap: 15px;
+}
+
+#wombat .profile_section_fields > .profile_field > label {
+    flex: 0 0 140px;
+    width: 140px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+#wombat .profile_section_fields > .profile_field > field {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+#wombat .profile_field .field_uneditable {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* ONGLETS RADIO DU PROFIL */
+
+#wombat .profile_radio_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    min-width: 0;
+}
+
+#wombat .profile_radio_input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#wombat .profile_radio_label {
+    order: 0;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 8px;
+    border-bottom: 2px solid transparent;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight3);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#wombat .profile_radio_label:hover {
+    color: var(--textcolor2);
+}
+
+#wombat .profile_radio_input:checked + .profile_radio_label {
+    color: var(--textcolor2);
+border-bottom-color: transparent;
+border-image: var(--gradient1) 0 0 1 0;
+}
+
+#wombat .profile_radio_input:focus-visible + .profile_radio_label {
+    outline: 1px solid var(--textcolor2);
+    outline-offset: -3px;
+}
+
+#wombat .profile_radio_tabs > .profile_section {
+    display: none;
+    order: 1;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    margin: 18px 0 0;
+    padding: 0;
+    border: none;
+}
+
+#wombat .profile_radio_input:checked + .profile_radio_label + .profile_section {
+    display: block;
+}
+
+/* FIN PAGE DE PROFIL */
+
+
+/* MESSAGES PRIVÉS */
+
+.pm-actions .pm-new-message {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--gradient1);
+    border-radius: 5px;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--normal-size);
+    font-weight: var(--fontweight3);
+    text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pm-actions .pm-new-message:hover {
+    background: var(--gradient2);
+}
+
+/* FIN MESSAGES PRIVÉS */
+
+/* COMPTEUR SOUS L'ÉDITEUR */
+
+.editor-counter {
+    display: block;
+    clear: both;
+    width: 100%;
+ 
+    box-sizing: border-box;
+    margin: 10px 0 15px;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    text-align: center;
+}
+
+
+/***** TEST DE OUF *****/
+
+/* BARRE D'OUTILS DE L'ÉDITEUR */
+
+.sceditor-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px !important;
+}
+
+.sceditor-toolbar .sceditor-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: 0 !important;
+    padding: 3px !important;
+    background: transparent !important;
+    border: 1px solid color-mix(in srgb, var(--textcolor1) 20%, transparent) !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+.sceditor-toolbar .sceditor-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 3px;
+    box-shadow: none !important;
+    text-indent: 0 !important;
+    color: var(--textcolor1) !important;
+}
+
+.sceditor-toolbar .sceditor-button:hover,
+.sceditor-toolbar .sceditor-button.active {
+    background: var(--gradient1) !important;
+}
+
+.sceditor-toolbar .sceditor-button.disabled {
+    opacity: .35;
+}
+
+/* RETIRER LES ANCIENNES IMAGES */
+
+.sceditor-toolbar .sceditor-button div {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    background: none !important;
+    text-indent: 0 !important;
+    overflow: hidden;
+    font-size: 0 !important;
+}
+
+.sceditor-toolbar .sceditor-button div::before {
+    content: "·";
+    color: var(--textcolor1);
+    font-family: var(--font2), sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/* MISE EN FORME */
+
+.sceditor-toolbar .sceditor-button-bold div::before {
+    content: "B";
+    font-weight: 800;
+}
+
+.sceditor-toolbar .sceditor-button-italic div::before {
+    content: "I";
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.sceditor-toolbar .sceditor-button-underline div::before {
+    content: "U";
+    text-decoration: underline;
+}
+
+.sceditor-toolbar .sceditor-button-strike div::before {
+    content: "S";
+    text-decoration: line-through;
+}
+
+/* ALIGNEMENTS */
+
+.sceditor-toolbar .sceditor-button-left div::before,
+.sceditor-toolbar .sceditor-button-center div::before,
+.sceditor-toolbar .sceditor-button-right div::before,
+.sceditor-toolbar .sceditor-button-justify div::before {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.sceditor-toolbar .sceditor-button-left div::before {
+    content: "G";
+}
+
+.sceditor-toolbar .sceditor-button-center div::before {
+    content: "C";
+}
+
+.sceditor-toolbar .sceditor-button-right div::before {
+    content: "D";
+}
+
+.sceditor-toolbar .sceditor-button-justify div::before {
+    content: "J";
+}
+
+/* LISTES */
+
+.sceditor-toolbar .sceditor-button-bulletlist div::before {
+    content: "•≡";
+}
+
+.sceditor-toolbar .sceditor-button-orderedlist div::before {
+    content: "1≡";
+    font-size: 14px;
+}
+
+.sceditor-toolbar .sceditor-button-horizontalrule div::before {
+    content: "―";
+}
+
+/* CITATIONS ET CODE */
+
+.sceditor-toolbar .sceditor-button-quote div::before {
+    content: "❞";
+    font-size: 22px;
+}
+
+.sceditor-toolbar .sceditor-button-code div::before {
+    content: "/>";
+    font-size: 13px;
+}
+
+.sceditor-toolbar .sceditor-button-spoiler div::before,
+.sceditor-toolbar .sceditor-button-faspoiler div::before {
+    content: "/!\\";
+    font-size: 14px;
+}
+
+.sceditor-toolbar .sceditor-button-hide div::before,
+.sceditor-toolbar .sceditor-button-fahide div::before {
+    content: "[]";
+    font-size: 16px;
+}
+
+.sceditor-toolbar .sceditor-button-table div::before {
+    content: "▦";
+}
+
+/* IMAGES ET LIENS */
+
+.sceditor-toolbar .sceditor-button-image div::before {
+    content: "▧";
+}
+
+.sceditor-toolbar .sceditor-button-link div::before {
+    content: "∞";
+    font-size: 24px;
+}
+
+.sceditor-toolbar .sceditor-button-unlink div::before {
+    content: "↛";
+}
+
+/* MASQUER L'HÉBERGEMENT D'IMAGE ET LES VIDÉOS */
+
+.sceditor-toolbar .sceditor-button-servimg,
+.sceditor-toolbar .sceditor-button-video,
+.sceditor-toolbar .sceditor-button-embed,
+.sceditor-toolbar .sceditor-button-youtube,
+.sceditor-toolbar .sceditor-button-dailymotion,
+.sceditor-toolbar .sceditor-button-flash {
+    display: none !important;
+}
+
+/* TEXTE */
+
+.sceditor-toolbar .sceditor-button-headers div::before {
+    content: "H";
+    font-weight: 800;
+}
+
+.sceditor-toolbar .sceditor-button-size div::before {
+    content: "A↕";
+    font-size: 14px;
+}
+
+.sceditor-toolbar .sceditor-button-color div::before {
+    content: "●";
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sceditor-toolbar .sceditor-button-font div::before {
+    content: "Aa";
+    font-size: 14px;
+}
+
+.sceditor-toolbar .sceditor-button-removeformat div::before {
+    content: "Tx";
+    font-size: 14px;
+}
+
+/* AUTRES OUTILS */
+
+.sceditor-toolbar .sceditor-button-more div::before {
+    content: "···";
+    font-weight: 800;
+}
+
+.sceditor-toolbar .sceditor-button-mention div::before {
+    content: "@";
+}
+
+.sceditor-toolbar .sceditor-button-emoticon div::before {
+    content: "✦";
+    font-size: 20px;
+}
+
+.sceditor-toolbar .sceditor-button-date div::before {
+    content: "▦";
+}
+
+.sceditor-toolbar .sceditor-button-time div::before {
+    content: "◷";
+}
+
+.sceditor-toolbar .sceditor-button-pastetext div::before {
+    content: "T";
+}
+
+.sceditor-toolbar .sceditor-button-source div::before {
+    content: "⋮";
+    font-size: 14px;
+}
+
+.sceditor-toolbar .sceditor-button-twemojifa div::before {
+    content: "\263A\FE0E";
+    color: var(--textcolor1);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.zpost > .zpost-contact {
+    margin-top: -32px;
+    min-height: 32px;
+    box-sizing: border-box;
+}
+
+.zpost > .zpost-profile {
+    padding-bottom: 10px;
+}
+
+/* BULLE FLOTTANTE DES MEMBRES AYANT AIMÉ */
+
+.zpost,
+.zpost .post_details {
+    overflow: visible;
+}
+
+.zpost .post_details {
+    position: relative;
+    z-index: 2;
+}
+
+.zpost .like_button {
+    position: relative;
+    overflow: visible;
+}
+
+.zpost .zpost-like-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    width: 240px;
+    max-width: 70vw;
+    padding: 14px;
+    box-sizing: border-box;
+   background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: var(--border);
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight2);
+    line-height: 1.5;
+    text-align: left;
+    text-transform: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* NEUTRALISER LA PRÉSENTATION NATIVE DANS LA BULLE */
+
+.zpost .zpost-like-list .fa_like_list {
+    display: block !important;
+    position: static !important;
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* OUVERTURE AU SURVOL ET AU CLAVIER */
+
+.zpost .like_button:hover .zpost-like-list,
+.zpost .like_button:focus-within .zpost-like-list {
+    display: block;
+}
+
+/* LIKE */
+
+.zpost .like_button .like_text {
+    font-size: 0;
+}
+
+.zpost .like_button .like_text::before {
+    content: "♥";
+    font-size: var(--little-size);
+    text-transform: none;
+    font-weight: var(--fontweight2);
+}
+
+/* LIKE ACTIVÉ */
+
+.zpost .like_button .rep-button.fa_liked,
+.zpost .like_button .rep-button.fa_liked .like_text::before {
+    color: var(--color5);
+}
+
+/* 
+
+/* PROFIL TW */
+.zpost .zpost-sensitive .zpost-value {
+    display: inline-block;
+    filter: blur(5px);
+    transition: filter .25s ease;
+}
+
+/* HOVER TW */
+.zpost .zpost-sensitive:hover .zpost-value,
+.zpost .zpost-sensitive:focus-within .zpost-value {
+    filter: blur(0);
+}
+
 
   /***** FIN TRANSFERT*****/
 
