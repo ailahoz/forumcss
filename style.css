@@ -4314,6 +4314,299 @@ form[name="form_login"] .content {
 
 /******** DÉBUT TRANSFERT FA VERS GITHUB *********/
 
+body#blanktheme {
+  margin-top: 40px !important;
+}
+
+.span {
+  font-size: var(--normal-size);
+  color: var(--textcolor1);
+}
+
+.zpost .post_pseudo,
+.zpost .post_rank {
+  margin: 0;
+}
+
+
+a.mentiontag {
+  text-transform: lowercase !important;
+  color: var(--textcolor1);
+}
+
+/* TEST */
+
+/* MESSAGE DE CONFIRMATION */
+
+.confirmation-message {
+    width: 100%;
+    text-align: center;
+}
+
+.confirmation-message p {
+    text-align: center;
+}
+
+/* INTITULÉS DANS MODIFIER MON PROFIL */
+
+#ucp dl > dt,
+#ucp dl > dt > span,
+#ucp dl > dt > label {
+    color: var(--textcolor1) !important;
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight3);
+    text-transform: uppercase;
+}
+
+/* BANDEAU DU GROUPE ADMIN */
+
+.zpost-admin {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    background: var(--gradient1);
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--extralittle-size);
+    font-weight: var(--fontweight3);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* LISTE DES MEMBRES  */
+
+.memberlist_page .userlist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+}
+
+.memberlist_page .userlist_profil {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(25% - 11.25px);
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+    background: color-mix(in srgb, var(--color5) 55%, transparent);
+    border: 1px solid var(--color6);
+    border-radius: 0;
+}
+
+/* GRAND AVATAR */
+
+.memberlist_page .userlist_avatar {
+    display: block;
+    flex: none;
+    align-self: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.memberlist_page .userlist_avatar img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 8;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+/* INFORMATIONS CENTRÉES */
+
+.memberlist_page .userlist_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+    min-width: 0;
+    margin: 0;
+    padding: 12px 0 0;
+    text-align: center;
+}
+
+.memberlist_page .userlist_details::before {
+    content: none;
+}
+
+.memberlist_page .userlist_pseudo,
+.memberlist_page .userlist_pseudo a {
+    font-family: var(--font2);
+    font-size: var(--medium-size);
+    font-weight: var(--fontweight3);
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+/* LA DERNIÈRE VISITE */
+
+.memberlist_page .userlist_infos {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.memberlist_page .userlist_info {
+    display: none;
+}
+
+.memberlist_page .userlist_info:nth-child(2) {
+    display: block;
+}
+
+.memberlist_page .userlist_label {
+    display: none;
+}
+
+.memberlist_page .userlist_value {
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: var(--fontweight2);
+    text-transform: lowercase;
+}
+
+/* CONTACTS  */
+
+.memberlist_page .userlist_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 12px;
+    float: none;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.memberlist_page .userlist_contact a {
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--extralittle-size, 10px);
+    font-weight: var(--fontweight3);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.memberlist_page .userlist_contact a:hover {
+    color: var(--textcolor2);
+}
+
+.memberlist_page .userlist_pm:not(:has(a)),
+.memberlist_page .userlist_www:not(:has(a)) {
+    display: none;
+}
+
+/* RECHERCHE ET TRI DES MEMBRES */
+
+.memberlist_filters {
+    display: block;
+    margin: 25px 0;
+    padding: 18px;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+}
+
+.memberlist_filters form {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)) auto;
+    align-items: end;
+    gap: 18px;
+    width: 100%;
+    margin: 0;
+}
+
+.memberlist_filters .memberlist_filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    margin: 0;
+}
+
+.memberlist_filters .memberlist_filter > span {
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.memberlist_filters input[type="text"],
+.memberlist_filters select {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    max-width: 100%;
+    height: 40px;
+    margin: 0 !important;
+    padding: 0 12px;
+    background: transparent !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--normal-size);
+    box-sizing: border-box;
+}
+
+/* CHAMP DE RECHERCHE */
+.memberlist_filters input[type="text"] {
+    background: var(--color3) !important;
+}
+
+/* MENUS DE TRI */
+.memberlist_filters select {
+    border: var(--border) !important;
+}
+
+.memberlist_filters input[type="text"]:focus,
+.memberlist_filters select:focus {
+    outline: 1px solid var(--textcolor2);
+    outline-offset: 2px;
+}
+
+.memberlist_filters select option {
+    background: var(--color5);
+    color: var(--textcolor1);
+}
+
+.memberlist_filters input[type="submit"] {
+    width: auto;
+    height: 40px;
+    margin: 0 !important;
+    padding: 0 20px;
+    background: var(--gradient1);
+    border-radius: 0;
+    color: var(--textcolor1);
+    font-family: var(--font2);
+    font-size: var(--little-size);
+    font-weight: 800;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.memberlist_filters input[type="submit"]:hover {
+    background: var(--gradient2);
+}
+
+/* FIN TEST */
+
 /* BARRE SWITCHEROO --- */
 /* BARRE --- */
 .switcheroo {
