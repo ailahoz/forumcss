@@ -2219,12 +2219,6 @@ label.pa-tab-label {
   display: none;
 }
 
-/* IMG FORUMS */
-
-.forum:has(> .forumtitle[href^="/f1-"]) {
-  --forum-photo: url("https://i.pinimg.com/736x/12/24/da/1224da1e71c4fb8817565ce1fc2a9b3d.jpg");
-}
-
 
 /* STRUCTURE TOPICS LIST */
 
@@ -5136,6 +5130,14 @@ background-repeat: repeat, no-repeat;
 .forum_content::before {
   background: var(--color3) var(--forum-photo, none) center / cover no-repeat;
    border-left: var(--border);
+}
+
+@media not all {
+/* IMG FORUMS */
+
+.forum:has(> .forumtitle[href^="/f1-"]) {
+  --forum-photo: url("https://i.pinimg.com/736x/12/24/da/1224da1e71c4fb8817565ce1fc2a9b3d.jpg");
+}
 }
 
 /* STATS DESCRIPTION */
